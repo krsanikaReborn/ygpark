@@ -1,0 +1,296 @@
+<script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+<style>
+    .nav_c {
+        position: relative;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: #434343 !important;
+    }
+
+    .bd_leftSmall {
+        color: #434343;
+    }
+
+    .sidebar {
+        height: 448px;
+    }
+
+
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+        color: #0095A8;
+        background: #fff;
+        border-color: #0095A8 #0095A8 #fff;
+    }
+
+    .nav-tabs .nav-link {
+        border-color: #fff #fff #0095A8 #fff;
+        background: #EFEFEF;
+        color: #7E7E7E;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        color: #434343;
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    td,
+    th {
+        border: 1px solid #7E7E7E;
+        text-align: center;
+        padding: 8px;
+        font-weight: 300 !important;
+    }
+
+    th {
+        background: #efefef;
+        color: #434343;
+        border-right: 3px solid #fff;
+        border-left: 3px solid #fff;
+    }
+
+    td {
+        border-right: 3px solid #fff;
+        border-left: 3px solid #fff;
+    }
+
+    .disc>li {
+        list-style: disc
+    }
+
+    .pb_25 {
+        padding-bottom: 25px;
+    }
+
+    .sub_txt01 {
+        color: #434343;
+        font-size: 15px;
+        font-weight: 300;
+        padding-bottom: 8px;
+    }
+
+    .sub_txt02 {
+        padding: 3px 60px;
+        background: #E5E5E5;
+        margin-right: 14px;
+    }
+
+    .p_3_66 {
+        padding: 3px 66px 3px 66px;
+    }
+
+    .search_btn{
+        width : 150px;
+        height : 30px;
+        background-color: #0095A8;
+        color : white;
+    }
+    #dataContents > div > div> input {
+        border : #0095A8 2px solid ;
+    }
+    #loading {
+        width : 100%;
+        height : 80px;
+        justify-content: center;
+        align-items: center;
+        display : none;
+        margin: 50px;
+    }
+
+    @media screen and (max-width:576px) {
+        .sidebar {
+            display : none;
+        }
+        /*        
+        .foldbox {
+            width : 390px;
+        }
+        */
+        .search_btn_box{
+            display : none;
+        }        
+        .search_btn_box{
+            display : none;
+        }      
+        .search_btn_exist_box{
+            margin-top : 20px;
+            text-align: right;
+        }
+        .search_name{
+            max-width : 100%!important;
+            flex : none;
+        }  
+    }    
+</style>
+
+<div class="container-fluid bg_point" style="height:180px">
+    <div class="row align-items-end h-100">
+        <div class="col fs_36 fw_700 color_white text-center pb-3">
+            마이페이지
+        </div>
+    </div>
+</div>
+
+
+<!---사이드메뉴-->
+<div class="mw_1500 d-flex mt-5 mb-8">
+    <ul class="nav flex-column mt-6 sidebar ">
+        <li class="nav-item text-center border_b">
+            <a class="nav-link fs_20 py-5 disabled" href="#">마이페이지</a>
+        </li>
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=26187">계약연동하기</a>
+        </li>
+        <li class="nav-item  fs_13 border_b">
+            <a class="nav-link py-3" href="/my/memb.info.php">회원정보수정</a>
+        </li>
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=25973">가입내역조회</a>
+        </li>
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=25974">납부내역조회</a>
+        </li>
+        <li class="nav-item fs_13 border_b protocoler">
+            <a class="nav-link py-3 active" href="/page/?M2_IDX=26129">의전팀장조회</a>
+        </li>
+        <li class="nav-item fs_13 border_b protocoler">
+            <a class="nav-link py-3" href="/page/?M2_IDX=26574">법인장례지원</a>
+        </li>        
+    </ul>
+
+    <div id="dataContents" class="container-fluid mt-9 mw_1100">
+        <div class="row ">
+            <div class="fs_32 fw_600 point_color">의전팀장조회<br><br></div>
+        </div>
+        <div class="row fs_20 pb_25">
+            <div class="col-3 search_name"> 회원명</div>
+            <div class="col"> <input id="userName" type="text"></div>
+            <div class="col search_btn_box"> </div>
+        </div>
+        <div class="row fs_20 pb_25">
+            <div class="col-3 search_name""> 핸드폰번호</div>
+            <div class="col"> <input id="userTel" type="text"></div>
+            <div class="col search_btn_box"></div>
+        </div>
+        <div class="row fs_20 pb_25">
+            <div class="col-3 search_name""> 주민/법인번호</div>
+            <div class="col"> <input id="userIdNumber" type="text"></div>
+            <div class="col search_btn_exist_box">  <button class="search_btn" onClick="searcher.search()">검색</button> </div>
+        </div>
+        <div class="row fs_10">
+            (주의사항) 주민번호 검색시 앞 6자리로만 검색됩니다.<br>
+            (주의사항) 전화번호 검색시 뒤 4자리로만 검색됩니다.<br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;각 항목은 단독으로도 검색되나, 여러개를 넣을 경우 모두 일치하는 것만 찾습니다.
+        </div>
+        <div id="loading">
+            <i class="fas fa-spinner fa-10x fa-spin"></i>
+        </div>
+        <div class="row mt-3">
+            <div id="content_area" class="col table-responsive-sm">
+                <table id="personTable" style="display:none;">
+                     <tr>
+                        <th id="th_name" class="th_person">이름</th>
+                    </tr>
+                    <tr>
+                        <th id="th_id" class="th_person">생년월일</th>
+                    </tr>
+                    <tr>
+                       <th id="th_proName" class="th_person">전화번호</th> 
+                    </tr>
+                    <tr>
+                        <th id="th_totalPayTimes" class="th_person">회원번호</th>
+                    </tr>
+                    <tr>
+                        <th id="th_payAmount" class="th_person">상품명</th>
+                    </tr>
+                    <tr>
+                        <th id="th_payStartDate" class="th_person">기납부액</th>
+                    </tr>
+                    <tr>
+                        <th id="th_payDate" class="th_person">잔여금액</th>
+                    </tr>
+                    <tr>
+                       <th id="th_payWishDate" class="th_person">모집인</th> 
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<script>
+$( () =>{
+});
+
+const searcher = {
+    search : () =>{
+        $('#loading').css({display:'flex'});
+        $('.trData').remove();
+        var $tr = $('<tr>').addClass('trData');
+        $.ajax({
+            url : serverUrl + "api/user/search",
+            type : "GET",
+            dataType : "JSONP",
+            data : {
+                "name" : $('#userName').val(),
+                "id_number" :  $('#userIdNumber').val(),
+                "tel" : $('#userTel').val()
+            },
+            jsonp : "callback",
+            async : false,
+        }).done((data)=>{
+            console.log(data);
+            if(data.length == 0){
+                alert('회원정보가 존재하지 않습니다.');
+                console.log('Funeral User Error! :'+data);
+                $('#loading').css({display:'none'});
+            }else searcher.drawUserData(data);
+        }).fail((jqXHR, textStatus, errorThrown) =>{
+            console.log('Funeral User Error! :'+textStatus+" : "+errorThrown);
+            alert('회원정보가 존재하지 않습니다.');
+            $('#loading').css({display:'none'});
+        });
+    },
+    
+    drawUserData : (datas) => {
+        $('#result_table').remove();
+        let $table = $('#personTable').clone().attr('id', 'result_table').css({display: 'table'});
+
+        $.each(datas, function(i, user){
+            var $tr =$table.find('tr');
+            $tr.eq(0).append($('<td>').html(user.CUS_NAME ));
+            $tr.eq(1).append($('<td>').html(user.CUS_IDNTY_ID ));
+            $tr.eq(2).append($('<td>').html(user.CUS_MOBILE ));
+            $tr.eq(3).append($('<td>').html(user.CNTRCT_NO ));
+            $tr.eq(4).append($('<td>').html(user.PRO_NAME ));
+            $tr.eq(5).append($('<td>').html(user.PAYAMT ));
+            $tr.eq(6).append($('<td>').html(user.REMAIN_PAYAMT ));
+            $tr.eq(7).append($('<td>').html(user.CUS_EMP_NM ));
+            $table.append($tr);
+        });
+        $('#content_area').append($table);
+        $('#loading').css({display:'none'});
+    }
+
+}
+
+
+$(document).ready(function () {
+    //이미지 변경 함수 호출
+    changeIMG();
+});
+
+function changeIMG() {
+    //img 태그의 아이디로 변경 할 때
+    $(".logo").attr("src", "https://yongin.s3.ap-northeast-2.amazonaws.com/logo_ci_blue.png");
+}
+
+</script>

@@ -1,0 +1,273 @@
+<style>
+    .nav_c {
+        position: relative;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: #434343 !important;
+    }
+
+    .bd_leftSmall {
+        color: #434343;
+    }
+
+    .sidebar {
+        height: 448px;
+    }
+
+
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+        color: #0095A8;
+        background: #fff;
+        border-color: #0095A8 #0095A8 #fff;
+    }
+
+    .nav-tabs .nav-link {
+        border-color: #fff #fff #0095A8 #fff;
+        background: #EFEFEF;
+        color: #7E7E7E;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        color: #434343;
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    td,
+    th {
+        border: 1px solid #7E7E7E;
+        text-align: center;
+        padding: 8px;
+        font-weight: 300 !important;
+    }
+
+    th {
+        background: #0095A8;
+        color: #fff;
+        border-right: 3px solid #fff;
+        border-left: 3px solid #fff;
+    }
+
+    td {
+        border-right: 3px solid #fff;
+        border-left: 3px solid #fff;
+    }
+
+    #personTable {
+        width : 600px;
+    }
+
+    .disc>li {
+        list-style: disc
+    }
+
+    .pb_25 {
+        padding-bottom: 25px;
+    }
+
+    .sub_txt01 {
+        color: #434343;
+        font-size: 15px;
+        font-weight: 300;
+        padding-bottom: 8px;
+    }
+
+    .sub_txt02 {
+        padding: 3px 60px;
+        background: #E5E5E5;
+        margin-right: 14px;
+    }
+
+    .p_3_66 {
+        padding: 3px 66px 3px 66px;
+    }
+
+    .th_biz{
+        display : none;
+    }
+    @media screen and (max-width:576px) {
+        #personTable {
+            width : 100%;
+        }
+        .sidebar {
+            display : none;
+        }
+    }
+</style>
+
+<div class="container-fluid bg_point" style="height:180px">
+    <div class="row align-items-end h-100">
+        <div class="col fs_36 fw_700 color_white text-center pb-3">
+            마이페이지
+        </div>
+    </div>
+</div>
+
+
+<!---사이드메뉴-->
+<div class="mw_1500 d-flex mt-5 mb-8">
+    <ul class="nav flex-column mt-6 sidebar">
+        <li class="nav-item  text-center border_b">
+            <a class="nav-link fs_20 py-5 disabled" href="#">마이페이지</a>
+        </li>
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=26187">상조회원등록</a>
+        </li>
+        <li class="nav-item  fs_13 border_b">
+            <a class="nav-link py-3" href="/my/memb.info.php">회원정보수정</a>
+        </li>
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3 active" href="/page/?M2_IDX=25973">가입내역조회</a>
+        </li>
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=25974">납부내역조회</a>
+        </li>
+        <li class="nav-item fs_13 protocoler">
+            <a class="nav-link py-3" href="/page/?M2_IDX=26129">의전팀장조회</a>
+        </li>
+        
+    </ul>
+    <div class="container-fluid mt-9 mw_1100">
+        <div class="row ">
+            <div class="col">
+                <div class="fs_32 fw_600 point_color">가입내역조회<br><br></div>
+            </div>
+        </div>
+        <div class="fs_20">
+            자세한 조회는 <a href="tel:tel:1577-3750">고객상담 1577-3750</a>에 연락주시기 바랍니다.
+            <br><br>
+        </div>
+        <div class="row mt-3">
+            <div id="dataTables" class="col table-responsive-sm">
+                <table id="personTable">
+                    <tr>
+                        <th id="th_id" class="th_person">회원번호</th>
+                    </tr>
+                    <tr>                                                
+                        <th id="th_name" class="th_person">상품명</th>
+                    </tr>
+                    <tr>                                                
+                        <th id="th_type" class="th_person">가입일자</th>
+                    </tr>
+                    <tr>                                                
+                        <th id="th_date" class="th_person">납입회차</th>
+                    </tr>
+                    <tr>                                                
+                        <th id="th_proname" class="th_person">기납부액</th>
+                    </tr>
+                    <tr>                                                
+                        <th id="th_tot_pay_times" class="th_person">계약상태</th>
+                    </tr>
+                    <tr>                                                
+                        <th id="th_payamt" class="th_person">수납방법</th>
+                    </tr>
+                    <tr>                                                
+                        <th id="th_zip" class="th_person">해약환급률</th>
+                    </tr>
+                    <tr>                                                
+                        <th id="th_address" class="th_person">해약환급금</th>
+                    </tr>
+                    <tr>                                                
+<!--
+                        <th id="th_biz_name" class="th_biz">법인명</th>
+                        <th id="th_ceo_name" class="th_biz">대표자명</th>
+                        <th id="th_email" class="th_biz">이메일</th>
+-->
+                        <th id="th_com_tel" class="th_biz">법인 전화</th>
+                    </tr>
+                    <tr>                                                
+                        <th id="th_com_zip" class="th_biz">법인 우편번호</th>
+                    </tr>
+                    <tr>                                                
+                        <th id="th_com_address" class="th_biz">법인 주소</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+    $(function(){
+        user.getUserData();
+        $.ajax({
+            url : serverUrl + "api/user/contract/" + user.id,
+            type : "GET",
+            dataType : "JSONP",
+            jsonp : "callback",
+            async : false,
+        }).done(function(data){
+            drawUserData(data.data);
+        }).fail(function (jqXHR, textStatus, errorThrown){
+            console.log('Funeral User Error! :'+textStatus+" : "+errorThrown);
+            alert('회원정보가 존재하지 않습니다.');
+//            location.href="/";
+        });
+    });
+
+
+    var user = {
+        id: null,
+        getUserData: function () {
+            $.ajax({
+                url: '/api/info.nx',
+                data: {"KEY": apikey, "SESS_ID": document.cookie.match('nx_session=([^;]*)')[1], "param": "id"},
+                type : "POST",
+                async : false,
+            }).done(function (data) {
+                if (data.success === true) {
+                    console.log('UserAuth Success!');
+                    user.id = data.items.id;
+                } else {
+                    console.log('login Nothing!');
+                }
+            }).fail(function (jqXHR, textStatus, errorThrown) {
+                console.log('login Error!' + textStatus + " : " + errorThrown);
+            });
+        }
+    }
+
+    function drawUserData(users){
+        $.each(users, function(index, user){
+            console.log(user);
+            var $tabletrs=$('#personTable tr');
+            $tabletrs.eq(0).append($('<td>').html(user.CNTRCT_NO));
+            $tabletrs.eq(1).append($('<td>').html(user.PRO_NAME));
+            $tabletrs.eq(2).append($('<td>').html(user.CNTRCT_DATE));
+            $tabletrs.eq(3).append($('<td>').html(user.LAST_TIMES));
+            $tabletrs.eq(4).append($('<td>').html(user.PAYAMT));
+            $tabletrs.eq(5).append($('<td>').html(user.CNTRCT_PAY_STTUS_NM));
+            $tabletrs.eq(6).append($('<td>').html(user.BILL_GUBUN));
+            $tabletrs.eq(7).append($('<td>').html(user.CANCEL_REFU_RATE));
+            $tabletrs.eq(8).append($('<td>').html(user.CANCEL_REFU_AMT));
+                /*
+            if(user.CUS_PERSONCHK == "법인") {
+                $('.th_biz').css({display: 'table-cell'});
+                $tr.append($('<td>').html(user.BIZ_NAME));
+                $tr.append($('<td>').html(user.BIZ_CEO));
+                $tr.append($('<td>').html(user.CUS_EMAIL));
+                $tr.append($('<td>').html(user.CUS_COMTEL));
+                $tr.append($('<td>').html(user.CUS_COMZIP));
+                $tr.append($('<td>').html(user.CUS_COMCUS_ADDRESS));
+            }
+            */
+//            $table.append($tr);
+        });
+    }
+
+    $(document).ready(function () {
+        //이미지 변경 함수 호출
+        changeIMG();
+    });
+    function changeIMG() {
+        //img 태그의 아이디로 변경 할 때
+        $(".logo").attr("src", "https://yongin.s3.ap-northeast-2.amazonaws.com/logo_ci_blue.png");
+    }
+
+</script>

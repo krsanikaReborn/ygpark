@@ -1,0 +1,177 @@
+<div class="container-fluid bg_point" style="height:180px; margin-bottom:90px;">
+    <div class="row align-items-end h-100">
+        <div class="col fs_36 fw_700 color_white text-center pb-3">
+            고객센터
+        </div>
+    </div>
+</div>
+
+<!---사이드메뉴-->
+<div class="mw_1500 d-flex mb-8 mt-5">
+    <ul class="nav flex-column mt-6 sidebar ">
+        <li class="nav-item  text-center border_b">
+            <a class="nav-link fs_20 py-5 disabled" href="/page/?M2_IDX=25967">고객센터</a>
+        </li>
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3" href="/board/list.php?M2_IDX=25990">공지사항</a>
+        </li>
+        <li class="nav-item  fs_13 border_b">
+            <a class="nav-link py-3" href="/board/list.php?M2_IDX=25971">회사소식</a>
+        </li>
+        <li class="nav-item  fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=26108">FAQ</a>
+        </li>
+        <li class="nav-item  fs_13 border_b">
+            <a class="nav-link py-3" href="/board/list.php?M2_IDX=25996">고객의 소리(VOC)</a>
+        </li>
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3" href="/board/list.php?M2_IDX=25993">고객이용후기</a>
+        </li>
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3 active" href="/board/list.php?M2_IDX=25994">자료실</a>
+        </li>
+    </ul>
+
+    <div class="container-fluid mt-9 mw_1100">
+        <div class="row ">
+            <div class="col">
+                <div class="fs_32 fw_600 point_color">자료실</div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col">
+
+                <div class="nx-prefix sub-content">
+                    <div class="content-container">
+                        <div class="inner-static">
+                          
+                            <!-- 안내문구 -->
+                            <div class="mboard-spot">
+                                <p class="lead">
+                                     [##_mboard_visual_lead_##]
+                                </p>
+                            </div>
+                            <!-- //안내문구 -->
+                          
+                            <!-- 카테고리 -->
+                            <s_category>
+                                <div class="mboard-category">
+                                      <s_category_cur>
+                                        <div class="open-category">
+                                            <a href="javascript: void(0);" onClick="$(this).parent().parent().find('.lst-category').toggleClass('active');">
+                                                <strong>[##_category_rep_link_text_##]</strong><i class="arr"></i>
+                                            </a>
+                                        </div>
+                                    </s_category_cur>
+                                    <ul class="lst-category">
+                                        <s_category_rep>
+                                            <li>
+                                                <a [##_category_rep_link_##] class="[##_category_rep_active_##]">
+                                                  <span>[##_category_rep_link_text_##]</span>
+                                              </a>
+                                            </li>
+                                        </s_category_rep>
+                                    </ul>
+                                </div>
+                            </s_category>
+                            <!-- //카테고리 -->
+                          
+                            <!-- 검색 -->
+                            <div class="mboard-search">
+                                <div class="input-box">
+                                    <input type="text" id="[##_search_id_##]" name="[##_search_name_##]" class="int2 searchInput" placeholder="검색어를 입력해 주세요." onkeypress="if (event.keyCode==13) { requestSearch('.searchInput') }">
+                                </div>
+                                <div class="btn-box">
+                                    <a onclick="requestSearch('.searchInput')" class="btn-search">
+                                        <span class="ico">검색</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- //검색 -->
+                          
+                            <!-- 전체보기 -->
+                            <s_search_init>
+                                <div class="btn-all-area">
+                                    <button type="button" [##_btn_init_##] class="btn-all">전체보기</button>
+                                </div>
+                            </s_search_init>
+                            <!-- //전체보기 -->
+                          
+                            <!-- 리스트 -->
+                            <div class="mboard-list-area">
+                                <div class="mboard-list">
+                                    <s_list>
+                                        <table class="lst-table-list">
+                                            <colgroup>
+                                                <col style="width: 12%;">
+                                                <col style="width: 49.5%;">
+                                                <col style="width: 14%;">
+                                                <col style="width: 14%;">
+                                                <col style="width: 10.5%;">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th>번호</th>
+                                                    <th>제목</th>
+                                                    <th>이름</th>
+                                                    <th>날짜</th>
+                                                    <th>조회수</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <s_list_rep>
+                                                    <tr onclick="location.href='[##_item_detail_link_##]'">
+                                                        <td>
+                                                            <span class="md">No.</span>[##_item_no_##]
+                                                        </td>
+                                                        <td class="tit">
+                                                            <a>
+                                                                <strong>[##_item_title_##]</strong>
+                                                            </a>
+                                                        </td>
+                                                        <td class="name">
+                                                            <span class="md">이름 : </span>[##_item_writer_##]
+                                                        </td>
+                                                        <td class="date">
+                                                            [##_item_regdate_##]
+                                                        </td>
+                                                        <td class="count">
+                                                            <span class="md">조회수 : </span>[##_item_hit_##]
+                                                        </td>
+                                                    </tr>
+                                                </s_list_rep>
+                                            </tbody>
+                                        </table>
+                                        <s_list_btn_add>
+                                            <div class="btn-area">
+                                                <button onclick="[##_btn_add_onclick_##]" class="btn-write">글쓰기</button>
+                                            </div>
+                                        </s_list_btn_add>
+                                    </s_list>
+                                </div>
+                              
+                                <s_paging>
+                                    <div class="pagenate">
+                                        <a [##_link_prev_##] class="btn-prev [##_no_more_prev_##]">이전 페이지로 이동</a>
+                                        <div class="inner-wrap">
+                                            <s_paging_rep>
+                                                <a [##_paging_rep_link_##] class="[##_paging_rep_link_num_active_##]" style="cursor: pointer;">[##_paging_rep_link_num_##]</a>
+                                            </s_paging_rep>
+                                        </div>
+                                        <a [##_link_next_##] class="btn-next [##_no_more_next_##]">다음 페이지로 이동</a>
+                                    </div>
+                                </s_paging>
+                            </div>
+                            <!-- //리스트 -->
+                          
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+

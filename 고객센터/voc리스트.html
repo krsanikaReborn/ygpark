@@ -1,0 +1,160 @@
+<div class="container-fluid bg_point" style="height:180px">
+    <div class="row align-items-end h-100">
+        <div class="col fs_36 fw_700 color_white text-center pb-3">
+            고객센터
+        </div>
+    </div>
+</div>
+
+
+<!---사이드메뉴-->
+<div class="mw_1500 d-flex mb-8 mt-5">
+    <ul class="nav flex-column mt-6 sidebar ">
+        <li class="nav-item  text-center border_b">
+            <a class="nav-link fs_20 py-5 disabled" href="/page/?M2_IDX=25967">고객센터</a>
+        </li>
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3" href="/board/list.php?M2_IDX=25990">공지사항</a>
+        </li>
+        <li class="nav-item  fs_13 border_b">
+            <a class="nav-link py-3" href="/board/list.php?M2_IDX=25971">회사소식</a>
+        </li>
+        <li class="nav-item  fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=26108">FAQ</a>
+        </li>
+        <li class="nav-item  fs_13 border_b">
+            <a class="nav-link py-3 active" href="/board/list.php?M2_IDX=25996">고객의 소리(VOC)</a>
+        </li>
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3" href="/board/list.php?M2_IDX=25993">고객이용후기</a>
+        </li>
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3" href="/board/list.php?M2_IDX=25994">자료실</a>
+        </li>
+    </ul>
+
+    <div class="container-fluid mt-9 mw_1100">
+        <div class="row ">
+            <div class="col">
+                <div class="fs_32 fw_600 point_color">고객의 소리(VOC)</div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col">
+
+<!-- 서브 콘텐츠 : 멀티보드 start -->
+<div class="nx-prefix sub-content">
+
+    <!-- 서브 콘텐츠 내용 start -->
+    <div class="content-container">
+        <div class="inner-static">
+
+            <!-- 멀티보드 비주얼 start -->
+<!--
+            <div class="mboard-spot">
+                <p class="logo">
+                    <img src="[##_mboard_visual_logo_##]" alt="[##_mboard_visual_lead_##]">
+                </p>
+                <p class="lead">
+                    [##_mboard_visual_lead_##]
+                </p>
+            </div>
+-->
+            <!-- 멀티보드 비주얼 end -->
+
+            <!-- 멀티보드 검색 start -->
+<!--
+            <s_search>
+                <div class="mboard-search">
+                    <div class="input-box">
+                        <input type="text" name="[##_search_name_##]" id="[##_search_id_##]" value="[##_search_value_##]" placeholder="검색어를 입력해 주세요." class="input-search int2"
+                               onkeypress="if (event.keyCode == 13) { requestSearch('.input-search') }">
+                    </div>
+                    <div class="btn-box">
+                        <a href="javascript: void(0);" onclick="requestSearch('.input-search')" class="btn-search">
+                            <span class="ico">검색</span>
+                        </a>
+                    </div>
+                </div>
+            </s_search>
+-->
+            <!-- 멀티보드 검색 end -->
+
+            <!-- 멀티보드 카테고리 start -->
+            <div class="mboard-category">
+                <s_category>
+                    <ul class="lst-category">
+                        <s_category_rep>
+                            <li>
+                                <a [##_category_rep_link_##]>[##_category_rep_link_text_##]</a>
+                            </li>
+                        </s_category_rep>
+                    </ul>
+                </s_category>
+            </div>
+            <!-- 멀티보드 카테고리 영역 end -->
+
+            <!-- 멀티보드 리스트 영역 start -->
+            <div class="nx-prefix mboard-list-area">
+
+                <!-- 리스트 내용 start -->
+                <s_list>
+                    <div class="nx-prefix mboard-list">
+                        <ul class="lst-basic-list">
+                            <s_list_rep>
+                                <li>
+                                    <a href="[##_item_detail_link_##]" [##_item_detail_link_sys_opt_##]>
+                                        <div class="cnt">
+                                            <dl class="desc">
+                                                <dt class="tit">[##_item_no_##]. <strong class="new">[##_item_title_##]</strong></dt>
+                                            </dl>
+                                            <span class="date">[##_item_regdate_##] [##_item_writer_##]</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </s_list_rep>
+                            <s_list_nodata>
+                                <li class="no-data">등록된 정보가 없습니다. </li>
+                            </s_list_nodata>
+                        </ul>
+                    </div>
+
+                    <!-- 버튼 영역 start -->
+                    <s_list_btn_add>
+                        <div class="btn-area">
+                            <button onclick="[##_btn_add_onclick_##]" class="btn-write">글쓰기</button>
+                        </div>
+                    </s_list_btn_add>
+                    <!-- 버튼 영역 end -->
+                </s_list>
+                <!-- 리스트 내용 end -->
+
+                <!-- 리스트 하단 페이징 start -->
+                <s_paging>
+                    <div class="pagenate">
+                        <a [##_link_prev_##] class="btn-prev [##_no_more_prev_##]">이전 페이지로 이동</a>
+                        <div class="inner-wrap">
+                            <s_paging_rep>
+                                <a [##_paging_rep_link_##] class="[##_paging_rep_link_num_active_##]" style="cursor: pointer;">[##_paging_rep_link_num_##]</a>
+                            </s_paging_rep>
+                        </div>
+                        <a [##_link_next_##] class="btn-next [##_no_more_next_##]">다음 페이지로 이동</a>
+                    </div>
+                </s_paging>
+                <!-- 리스트 하단 페이징 end -->
+
+            </div>
+            <!-- 멀티보드 리스트 영역 end -->
+
+        </div>
+    </div>
+    <!-- 서브 콘텐츠 내용 end -->
+
+</div>
+<!-- 서브 콘텐츠 : 멀티보드 end -->
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,518 @@
+<style>
+    .nav_c {
+        position: relative;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: #434343 !important;
+    }
+
+    .bd_leftSmall {
+        color: #434343;
+    }
+
+    .point_color_box {
+        background: #0095A8;
+        font-weight: 300;
+        padding: 3px 60px;
+    }
+
+    .lh_30 {
+        line-height: 30px;
+    }
+
+    .pl_22 {
+        padding-left: 22px;
+    }
+
+    .pb_30 {
+        padding-bottom: 30px;
+    }
+
+    .dp_f {
+        display: flex;
+        border: 1px solid #D9D9D9;
+        /* max-width: 560px; */
+        width: 100%;
+        font-size: 15px !important;
+        font-weight: 300 !important;
+        color: #434343;
+    }
+
+    .bb_none {
+        border-bottom: none;
+    }
+
+    .formTtl {
+        width: 100%;
+        max-width: 170px;
+        height: 60px;
+        background: #EFEFEF;
+        padding: 18px 0 0 37px;
+    }
+
+    .formTtl_02 {
+        width: 100%;
+        max-width: 170px;
+        height: 180px;
+        background: #EFEFEF;
+        padding: 18px 0 0 37px;
+    }
+
+    .formCon {
+        width: 100%;
+        /*    max-width: 390px;*/
+        height: 60px;
+    }
+
+    .formCon_02 {
+        width: 100%;
+        /* max-width: 390px; */
+        height: 180px;
+    }
+
+    .formInput {
+        width: 96%;
+        /* max-width: 360px; */
+        margin: 15px;
+        font-size: 15px !important;
+        font-weight: 300 !important;
+        border: 1px solid #D9D9D9;
+    }
+
+    .formInput_02 {
+        width: 90%;
+        max-width: 159px;
+        /* 나중에 달력에 맞춰 넓이 수정 */
+        margin: 15px;
+        font-size: 15px !important;
+        font-weight: 300 !important;
+        border: 1px solid #D9D9D9;
+    }
+
+    .formSelect {
+        width: 96%;
+        /* max-width: 360px; */
+        margin: 15px;
+        height: 100%;
+        max-height: 30px;
+        font-size: 15px !important;
+        font-weight: 300 !important;
+        border: 1px solid #D9D9D9;
+    }
+
+    .formTextarea {
+        width: 96%;
+        /* max-width: 360px; */
+        margin: 15px;
+        height: 100%;
+        max-height: 150px;
+        font-size: 15px !important;
+        font-weight: 300 !important;
+        border: 1px solid #D9D9D9;
+    }
+
+    .subBtn {
+        width: 105px;
+        height: 35px;
+        color: #fff;
+        background: #0095A8;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    .btnPc {
+        padding-top: 18px;
+        /* max-width: 560px; */
+        width: 100%;
+        text-align: end;
+    }
+
+    .bd_t {
+        border-top: 1px solid #7E7E7E;
+    }
+
+    .sidebar {
+height: 448px;
+}
+
+    @media only screen and (max-width: 1366px) and (max-height: 1024px) {
+        .sidebar {
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width: 576px) {
+        .formInput {
+            width: 84%;
+        }
+        .formSelect {
+            width: 84%;
+        }
+        .formInput_02 {
+            width: 84%;
+            max-width: 100%;
+        }
+        .formTextarea {
+            width: 84%;
+        }
+        .M_formTtl {
+            height: 100px;
+        }
+
+        .M_formCon {
+            height: 100px;
+        }
+
+        .M_formInput_02 {
+            margin-top: 0;
+        }
+
+        .M_sidebar {
+            display: none;
+        }
+
+        .formTtl {
+            max-width: 120px;
+            padding-left: 14px;
+        }
+
+        .formTtl_02 {
+            max-width: 120px;
+            padding-left: 14px;
+        }
+    }
+</style>
+
+
+<div class="container-fluid bg_point" style="height:180px">
+    <div class="row align-items-end h-100">
+        <div class="col fs_36 fw_700 color_white text-center pb-3">
+            마이페이지
+        </div>
+    </div>
+</div>
+
+<!---사이드메뉴-->
+<div class="mw_1500 d-flex mb-8 mt-5">
+    <ul class="nav flex-column mt-6 sidebar M_sidebar">
+        <li class="nav-item  text-center border_b">
+            <a class="nav-link fs_20 py-5 disabled" href="/page/?M2_IDX=26187">마이페이지</a>
+        </li> 
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=26187">상조회원등록</a>
+        </li>
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3" href="/my/memb.info.php">회원정보수정</a>
+        </li>
+        <li class="nav-item  fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=25973">가입내역조회</a>
+        </li>
+        <li class="nav-item  fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=25974">납부내역조회</a>
+        </li>
+        <li class="nav-item  fs_13 border_b protocoler">
+            <a class="nav-link py-3" href="/page/?M2_IDX=26129">의전팀장조회</a>
+        </li>
+        <li class="nav-item fs_13 border_b protocoler">
+            <a class="nav-link py-3 active" href="/page/?M2_IDX=26574">법인장례지원</a>
+        </li>
+    </ul>
+
+
+    <div class="container-fluid mt-9 mw_1100">
+        <div class="row pb_30">
+            <div class="col">
+                <div class="fs_32 fw_600 point_color">법인장례지원</div>
+            </div>
+        </div>
+        <form id="funeral_support">
+            <div class="row ">
+                <div class="col ">
+                    <div class="dp_f bb_none bd_t">
+                        <div class="formTtl">회원사</div>
+                        <div class="formCon">
+                            <input class="formInput" name="cust_nm" id="" type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="dp_f bb_none">
+                        <div class="formTtl">소속</div>
+                        <div class="formCon">
+                            <input class="formInput" name="team" id="" type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col ">
+                    <div class="dp_f bb_none">
+                        <div class="formTtl">임직원</div>
+                        <div class="formCon">
+                            <input class="formInput" name="emp_nm" id="" type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col ">
+                    <div class="dp_f bb_none">
+                        <div class="formTtl">전화번호</div>
+                        <div class="formCon">
+                            <input class="formInput" name="tel" id="" type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col ">
+                    <div class="dp_f bb_none">
+                        <div class="formTtl">직책</div>
+                        <div class="formCon">
+                            <input class="formInput" name="duty" id="" type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col ">
+                    <div class="dp_f bb_none">
+                        <div class="formTtl">구분</div>
+                        <div class="formCon">
+                            <select name="support_type" class="formSelect">
+                                <option value="IN200100">장례지원</option>
+                                <option value="IN200200">장례행사</option>
+                                <option value="IN200300">행사/지원</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col ">
+                    <div class="dp_f bb_none">
+                        <div class="formTtl">장소</div>
+                        <div class="formCon">
+                            <input class="formInput" name="hall_nm" id="" type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col ">
+                    <div class="dp_f bb_none">
+                        <div class="formTtl">지역</div>
+                        <div class="formCon">
+                            <select name="region" class="formSelect">
+                                <option value="IN220100">1지역</option>
+                                <option value="IN220200">2지역</option>
+                                <option value="IN220300">3지역</option>
+                                <option value="IN220400">4지역</option>
+                                <option value="IN220800">특수1지역</option>
+                                <option value="IN220810">특수2지역</option> 
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col ">
+                    <div class="dp_f bb_none">
+                        <div class="formTtl">조사구분</div>
+                        <div class="formCon">
+                            <select name="fmly_bc" class="formSelect">
+                                <option value="IN240100">부친상</option>
+                                <option value="IN240110">모친상</option>
+                                <option value="IN240120">형제상</option>
+                                <option value="IN240130">자매상</option>
+                                <option value="IN240140">조부상</option>
+                                <option value="IN240150">조모상</option>
+                                <option value="IN240160">외조부상</option>
+                                <option value="IN240170">외조모상</option>
+                                <option value="IN240180">빙부상</option>
+                                <option value="IN240190">빙모상</option>
+                                <option value="IN240200">시부상</option>
+                                <option value="IN240210">시모상</option>
+                                <option value="IN240220">배우자상</option>
+                                <option value="IN240230">자녀상</option>
+                                <option value="IN240240">기타</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col ">
+                    <div class="dp_f bb_none">
+                        <div class="formTtl">고인명/상주명</div>
+                        <div class="formCon">
+                            <input class="formInput" name="nm" id="" type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col ">
+                    <div class="dp_f bb_none">
+                        <div class="formTtl M_formTtl">접수일자</div>
+                        <div class="formCon M_formCon">
+                            <input class="formInput_02" name="accept_dt" id="" type="date" placeholder="2022-07-19">
+                            <input class="formInput_02 M_formInput_02" name="accept_time" id="" type="time">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col ">
+                    <div class="dp_f bb_none">
+                        <div class="formTtl M_formTtl">배송일자</div>
+                        <div class="formCon M_formCon">
+                            <input class="formInput_02" name="ship_dt" id="" type="date" placeholder="2022-07-19">
+                            <input class="formInput_02 M_formInput_02" name="ship_time" id="" type="time">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col ">
+                    <div class="dp_f bb_none">
+                        <div class="formTtl">지원항목(기본)</div>
+                        <div class="formCon">
+                            <select name="support_item" class="formSelect">
+                                <option value="IN230100">일회용품(1BOX)</option>
+                                <option value="IN230200">일회용품(1BOX), 금박2단화환</option>
+                                <option value="IN230300">일회용품(1BOX), 근조기, 근조화환, 음료</option>
+                                <option value="IN230400">일회용품(1BOX), 근조기, 근조화환, 음료, 접객도우미</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col ">
+                    <div class="dp_f">
+                        <div class="formTtl_02">비고</div>
+                        <div class="formCon_02">
+                            <textarea name="remark" id="" class="formTextarea"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </form>
+        <div class="row btnPc">
+            <div class="col">
+                <button class="subBtn btn" onclick="support.send()">등록</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+<script>
+$(document).ready(function () {
+    //이미지 변경 함수 호출
+    changeIMG();
+    user.getUserData();
+});
+function changeIMG() {
+    //img 태그의 아이디로 변경 할 때
+    $(".logo").attr("src", "https://yongin.s3.ap-northeast-2.amazonaws.com/logo_ci_blue.png");
+}
+
+var support = {
+    init : ()=>{
+
+    },
+
+    send : ()=>{
+        let formData = $('#funeral_support').serializeObject();
+        formData.olly_id = user.id;
+        formData.olly_nm = user.name;
+
+        $.ajax({
+            url: serverUrl+'api/support/',
+//            url : 'http://localhost:3000/api/support/',
+            data: formData,
+            type : "POST",
+            dataType : "json",
+            async : false,
+        }).done(function (data) {
+            console.log('POST Success!', data);
+            alert('등록하였습니다.');
+        }).fail(function (jqXHR, textStatus, errorThrown) {
+            console.log('insert Error!' + textStatus + " : " + errorThrown);
+        });
+
+    }
+
+}
+
+
+var user = {
+    id: null,
+    name : null,
+    getUserData: function () {
+        $.ajax({
+            url: '/api/info.nx',
+            data: {"KEY": apikey, "SESS_ID": document.cookie.match('nx_session=([^;]*)')[1], "param": "id, name"},
+            type : "POST",
+            async : false,
+        }).done(function (data) {
+            if (data.success === true) {
+                console.log('UserAuth Success!');
+                user.id = data.items.id;
+                user.name = data.items.name;
+            } else {
+                console.log('login Nothing!');
+            }
+        }).fail(function (jqXHR, textStatus, errorThrown) {
+            console.log('login Error!' + textStatus + " : " + errorThrown);
+        });
+    }
+}
+
+
+jQuery.fn.serializeObject = function() {
+  var obj = null;
+  try {
+    if(this[0].tagName && this[0].tagName.toUpperCase() == "FORM" ) {
+      var arr = this.serializeArray();
+      if(arr){
+        obj = {};    
+        jQuery.each(arr, function() {
+        obj[this.name] = this.value;
+        });             
+      }
+    }
+  }catch(e) {
+    alert(e.message);
+  }finally  {}
+  return obj;
+}
+
+
+
+$(document).ready(function () {
+        //이미지 변경 함수 호출
+        changeIMG();
+});
+    function changeIMG() {
+        //img 태그의 아이디로 변경 할 때
+        $(".logo").attr("src", "https://yongin.s3.ap-northeast-2.amazonaws.com/logo_ci_blue.png");
+    }
+</script>

@@ -1,0 +1,2456 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper@8.3.1/swiper-bundle.js"></script>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+<script src="https://kit.fontawesome.com/555c9071ab.js" crossorigin="anonymous"></script>
+<!-- //common.css에 있던 내용 -->
+<style> 
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+.content_wrap2 {
+	max-width: 100% !important;
+}
+
+.sub_content {
+	padding: 0 !important;
+}
+
+.content {
+	padding: 0 !important;
+}
+
+.cls_meditor_bg_A {
+	background: #fff !important;
+}
+
+.n3iz3h.pp {
+    display: none;
+}
+
+.n3iz3h.sub-content-head .page-tit {
+    display: none;
+}
+
+.n3iz3h.sub-content-head {
+    display: none;
+}
+
+.bg_img {
+	overflow: initial!important;
+}
+
+.protocoler{
+    display: none;
+}
+
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	height: 100%;
+	word-break: keep-all;
+}
+
+body {
+	font-family: 'Inter', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+
+	color: #434343;
+	font-size: 16px;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none !important;
+	cursor: pointer;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+.letter_005 {
+	letter-spacing: 0.5em;
+}
+
+.letter_013 {
+	letter-spacing: 0.13em;
+}
+
+.letter_02 {
+	letter-spacing: 0.175em;
+}
+
+
+.letter_007 {
+	letter-spacing: -0.07em;
+}
+
+.letter_001 {
+	letter-spacing: -0.1em;
+}
+
+.letter_016 {
+	letter-spacing: 16px;
+}
+
+
+.fw_100 {
+	font-weight: 100;
+}
+
+.fw_200 {
+	font-weight: 200;
+}
+
+.fw_300 {
+	font-weight: 300;
+}
+
+.fw_400 {
+	font-weight: 400;
+}
+
+.fw_500 {
+	font-weight: 500;
+}
+
+.fw_600 {
+	font-weight: 600;
+}
+
+.fw_700 {
+	font-weight: 700;
+}
+
+.fw_800 {
+	font-weight: 800;
+}
+
+
+
+.fs_77 {
+	font-size: 77px !important;
+}
+.fs_69 {
+	font-size: 69px !important;
+}
+.fs_59 {
+	font-size: 59px !important;
+}
+.fs_54 {
+	font-size: 54px !important;
+}
+.fs_50 {
+	font-size: 50px !important;
+}
+.fs_47 {
+	font-size: 47px !important;
+}
+
+.fs_36 {
+    font-size: 36px !important;
+}
+.fs_34 {
+	font-size: 34px !important;
+}
+
+.fs_32 {
+	font-size: 32px !important;
+}
+
+.fs_31 {
+	font-size: 31px !important;
+}
+
+.fs_30 {
+	font-size: 30px !important;
+}
+
+.fs_29 {
+	font-size: 29px !important;
+}
+
+.fs_27 {
+	font-size: 27px !important;
+}
+
+.fs_26 {
+	font-size: 26px !important;
+}
+
+.fs_24 {
+	font-size: 24px !important;
+	line-height: 29px;
+}
+
+.fs_20 {
+	font-size: 20px !important;
+}
+
+.fs_18 {
+	font-size: 18px !important;
+}
+
+.fs_16 {
+	font-size: 16px !important;
+}
+.fs_15 {
+	font-size: 15px !important;
+	line-height: 19px;
+}
+.fs_13 {
+    font-size: 13px !important;
+}
+
+
+
+
+.fc_fff {
+	color: #fff !important;
+}
+
+.fc_000 {
+	color: #000;
+}
+
+.bg_gray {
+	background-color: #f2f2f2;
+}
+
+.bg_gray2 {
+	background-color: #595857;
+}
+
+.bg_yellow {
+	background-color: #FFB423;
+}
+
+.bg_fff {
+	background-color: #fff
+}
+
+
+.border_gray {
+	border-top: 2px solid #999999;
+}
+
+.border_000 {
+	border-top: 1px solid #000000;
+}
+
+
+
+.mw_1620 {
+	max-width: 1620px !important;
+	margin: 0 auto;
+}
+
+.mw_1300 {
+	max-width: 1300px !important;
+	margin: 0 auto;
+}
+
+.mw_1400 {
+	max-width: 1400px !important;
+	margin: 0 auto;
+}
+
+
+.mw_1500 {
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
+.mw_1100 {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.py_07 {
+	padding-bottom: 0.7rem !important;
+	padding-top: 0.7rem !important;
+}
+
+footer {
+	width: 100%;
+	height: 190px;
+	background-color: #fff;
+	border-top: 1px solid #E5E5E5;
+}
+
+
+/***************************************************************마진 패딩 *******************************************************/
+
+.m_auto {
+	margin: auto;
+}
+
+.mt__05 {
+	margin-top: -0.5em;
+}
+
+.mt-5_1 {
+	margin-top: 4rem !important;
+}
+
+.mt-5_2 {
+	margin-top: 5rem !important;
+}
+
+.mt-6 {
+	margin-top: 6rem !important;
+}
+
+.mt-7 {
+	margin-top: 7rem !important;
+}
+
+.mt-8 {
+	margin-top: 8rem !important;
+}
+
+.mt-9 {
+	margin-top: 9rem !important;
+}
+
+.mt-10 {
+	margin-top: 10rem !important;
+}
+
+.mb-5_1 {
+	margin-bottom: 4rem !important;
+}
+
+.mb-5_2 {
+	margin-bottom: 5rem !important;
+}
+
+.mb-6 {
+	margin-bottom: 6rem;
+}
+
+.mb-7 {
+	margin-bottom: 7rem;
+}
+
+.mb-8 {
+	margin-bottom: 8rem;
+}
+
+.mb_8 {
+	margin-bottom: 8px;
+}
+
+.mb-9 {
+	margin-bottom: 9rem;
+}
+
+.mb-10 {
+	margin-bottom: 10rem;
+}
+
+.mb-13 {
+	margin-bottom: 13rem;
+}
+
+.mb-14 {
+	margin-bottom: 14rem;
+}
+
+.mb_30 {
+	margin-bottom: 30rem
+}
+
+.mb_30px {
+	margin-bottom: 30px;
+}
+
+
+.pl-16 {
+	padding-left: 16rem;
+}
+
+.pr-16 {
+	padding-right: 16rem;
+}
+
+
+.pt-5_1 {
+	padding-top: 4rem;
+}
+
+.pt-5_2 {
+	padding-top: 5rem;
+}
+
+.pt-6 {
+	padding-top: 6rem;
+}
+
+.pt-7 {
+	padding-top: 7rem;
+}
+
+.pt-8 {
+	padding-top: 8rem;
+}
+
+.pt-9 {
+	padding-top: 9rem;
+}
+
+.pt-10 {
+	padding-top: 10rem;
+}
+
+.pt-15 {
+	padding-top: 15rem;
+}
+
+.pt-16 {
+	padding-top: 16rem;
+}
+
+.pb-5_1 {
+	padding-bottom: 4rem;
+}
+
+.pb-5_2 {
+	padding-bottom: 5rem;
+}
+
+.pb-6 {
+	padding-bottom: 6rem;
+}
+
+.pb-7 {
+	padding-bottom: 7rem;
+}
+
+.pb-8 {
+	padding-bottom: 8rem;
+}
+
+.pb-9 {
+	padding-bottom: 9rem;
+}
+
+.pb-10 {
+	padding-bottom: 10rem;
+}
+
+.pr_12 {
+	padding-right: 12px;
+}
+
+.pl_12 {
+	padding-left: 12px;
+}
+
+.pd_42 {
+	width: 155px;
+	line-height: 37px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.jc_center {
+	justify-content: center;
+}
+
+.hp_txt_r {
+	text-align: right;
+}
+
+/* modal */
+
+.bl_modal_wrapper {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.75);
+	z-index: 999;
+}
+
+.bl_modal {
+	width: 608px;
+	height: 624px;
+	border-radius: 4px;
+	background-color: #fff;
+	z-index: 1000;
+	position: absolute;
+	left: 50%;
+	top: 45%;
+	transform: translate(-50%, -50%);
+}
+
+.bl_modal_header {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 24px;
+	box-shadow: 0 3px 6px 0 rgba(34, 34, 34, 0.1);
+}
+
+.bl_modal_ttl {
+	font-weight: 500;
+}
+
+.bl_modal_clsBtn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 24px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}
+
+.bl_modal_body {
+	padding: 20px 24px;
+	height: calc(100% - 64px - 78px);
+	background-color: #fafafa;
+}
+
+.bl_modal_footer {
+	position: fixed;
+	display: flex;
+	/* justify-content: space-between; */
+	justify-content: end;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 12px 24px 16px 24px;
+	box-shadow: 0 -3px 6px 0 rgba(34, 34, 34, 0.1);
+}
+
+/* 모달 요소들 */
+.bl_modal_row__flex {
+	display: flex;
+	align-items: center;
+}
+
+.el_btn {
+	display: inline-block;
+	max-width: 100%;
+	padding: 8px 16px;
+	border: 1px solid transparent;
+	font-size: 0.9375rem;
+	text-align: center;
+	text-decoration: none;
+	transition: .1s;
+	border-radius: 4px;
+}
+
+.el_btn.el_btn__primary {
+	background-color: #3b5aff;
+	color: #fff;
+}
+
+.el_btn.el_btn__primary:hover {
+	background-color: #1a38d8;
+}
+
+
+
+
+
+
+
+
+/*탑메뉴 */
+
+
+.navbar {
+	z-index: 10;
+}
+
+
+
+
+
+.Rnavbar a {
+	color: #0095A8;
+	font-size: 20px;
+	font-weight: 900;
+	line-height: 23px;
+	text-align: right;
+	margin-bottom: 8px;
+}
+
+.Rnavbar_sub {
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.Rnavbar_row {
+	height: 100px;
+	border-bottom: 1px solid #E5E5E5;
+	text-align: center;
+}
+
+@media screen and (max-width:768px) {
+
+	.logo {
+		padding-top: 0.5em !important;
+	}
+
+	.logo {
+		width: 150px !important;
+	}
+
+}
+
+
+
+.hamburger-button {
+	position: absolute;
+	transition: .3s ease-in-out;
+	width: 20px;
+	height: 14px;
+	display: block;
+	/*top: 1.8rem;*/top: 2.3rem;
+	right: 1rem;
+	z-index: 1031;
+}
+.hamburger-button.active { position: fixed; }
+.hamburger-button span {
+	position: absolute;
+	height: 2px;
+	border-radius: 4px;
+	width: 100%;
+	background-color: #0095A8 !important;
+	top: 0;
+	transition: transform .2s ease-in-out, opacity .2s ease-in-out;
+}
+
+.hamburger-button span:nth-child(1) {
+	top: 0px;
+}
+
+.hamburger-button span:nth-child(2),
+.hamburger-button span:nth-child(3) {
+	top: 7px;
+}
+
+.hamburger-button span:nth-child(4) {
+	top: 14px;
+}
+
+.hamburger-button.active span {
+	background-color: #0095A8 !important;
+}
+
+.hamburger-button.active span:nth-child(1),
+.hamburger-button.active span:nth-child(4) {
+	opacity: 0;
+}
+
+.hamburger-button.active span:nth-child(2) {
+	transform: rotate(45deg);
+}
+
+.hamburger-button.active span:nth-child(3) {
+	transform: rotate(-45deg);
+}
+
+.overlay {
+	position: fixed;
+	left: 5.5em;
+	/*top: 90px;*/ top: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	background: #fff;
+	height: 0;
+	overflow: hidden;
+	opacity: 0;
+	z-index: 1030;
+	/*box-shadow: 0 4px 4px rgb(0 0 0 / 25%);*/ box-shadow: 0 0 20px rgb(0 0 0 / 40%);
+}
+
+.hamburger_menu {
+	width: 100%;
+	overflow-y: scroll;
+}
+
+.hamburger_menu ul {
+	padding-left: 0;
+}
+
+.hamburger_menu ul li {
+	list-style: none;
+	opacity: 0;
+	font-size: 1em;
+	font-weight: 500;
+	text-align: left;
+	line-height: 4em;
+	padding-left: 1.8em;
+	border-bottom: 1px solid #eaeaea;
+	letter-spacing: -0.02em;
+}
+
+@media screen and (max-height:680px) {
+	.hamburger_menu ul li {
+		line-height: 3.8em;
+	}
+}
+
+@keyframes fadeInLeft {
+	from {
+		opacity: 0;
+		transform: translateX(-25%);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.hamburger_menu ul a {
+	color: #333;
+	text-decoration: none;
+	opacity: 1;
+	transition: 0.2s ease;
+}
+
+.hamburger_menu ul li:hover,
+.hamburger_menu ul li:active {
+	cursor: pointer;
+	background-color: #fbfbfd;
+	color: #0095A8;
+	font-weight: 700;
+}
+
+.overlay.visible {
+	height: 100%;
+	opacity: 1;
+}
+
+.visible .hamburger_menu ul li {
+	animation: fadeInLeft 0.1s ease forwards;
+}
+
+
+
+@media screen and (min-width:1367px) {
+	.hamburger-button {
+		display: none;
+	}
+}
+
+@media screen and (max-width:1366px) {
+	.navbar-nav {
+		display: none;
+	}
+
+	.fixed-top02 {
+		display: none;
+	}
+
+	.sub_menu {
+		display: none;
+	}
+}
+
+
+
+.navbar-dark .navbar-nav .nav-link {
+	color: #434343;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: #0095A8 !important;
+}
+
+.nav_c.roll .nav-link:hover {
+	color: #0095A8 !important;
+}
+
+.nav_c.roll .nav-link .fc_fff:hover {
+	color: #0095A8 !important;
+}
+
+.more {
+	padding-left: 0.3em;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+	padding-right: 1.25rem;
+	padding-left: 1.25rem;
+}
+
+.logo {
+	/*margin-top: -0.2em;*/
+	width: 190px;
+}
+
+
+.nav_c {
+	height: 90px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.nav_c.roll {
+    /*
+	background: rgba(0, 0, 0, 0.05);*/
+	height: 90px;
+/*	border-bottom: 1px solid #E0E0E0; 
+    border-bottom: 1px solid white;
+	box-shadow: 0px 2px 4px rgb(186 186 186 / 8%);*/
+	/*backdrop-filter: blur(24px)!important;
+	-webkit-backdrop-filter:blur(24px);
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;*/
+}
+#navs:hover  .nav_c.roll {  background-color:#fff;  border-bottom:1px solid #e0e0e0; }
+#navs:hover .bd_leftSmall,  #navs:hover  .nav_c.roll .navbar-dark .navbar-nav .nav-link {  color:#434343;   }
+
+  .lh_22 { line-height:22px;}
+  
+.nav_c.roll .navbar {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+
+@media (max-width: 1580px) {
+	.navbar-expand-md .navbar-nav .nav-link {
+		padding-right: 1.5em !important;
+		padding-left: 1.5em !important;
+	}
+
+}
+
+@media (max-width: 1255px) {
+	.navbar-expand-md .navbar-nav .nav-link {
+		padding-right: 1.3em !important;
+		padding-left: 1.3em !important;
+	}
+#navs:hover  .nav_c.roll {  background-color: unset; border-bottom: none;}
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1124px) {
+	.navbar-dark .navbar-nav .nav-link {
+		font-size: 0.9em !important;
+	}
+#navs:hover  .nav_c.roll {  background-color: unset; border-bottom: none;}
+
+
+}
+
+.mobile2 {
+	display: none;
+}
+
+.mobile_inline {
+	display: none;
+}
+
+@media screen and (max-width:1000px) {
+ #navs:hover  .nav_c.roll {  background-color: unset; border-bottom: none;}
+	.mobile2 {
+		display: block;
+	}
+
+	.mobile_inline {
+		display: inline-block;
+	}
+
+	.pc {
+		display: none;
+	}
+}
+
+
+
+.fixed-top {
+
+	max-width: 1500px !important;
+	margin: 0 auto;
+	padding-top: 1.5em;
+	position: absolute;
+}
+
+.fixed-top02 {
+	position: absolute;
+	top: 90px;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+	border-bottom: 1px solid #e5e5e5;
+	/*display: none;*/
+}
+
+.nav-link {
+	padding: 0rem 1rem;
+}
+
+.nav_c {
+	position: absolute;
+	width: 100%;
+	height: 90px;
+	overflow: hidden;
+	-webkit-transition: height 0.3s;
+	-moz-transition: height 0.3s;
+	transition: height 0.3s;
+	z-index: 998;
+}
+
+#menu div {
+	display: inline-block;
+	color: #000;
+}
+
+#menu div.active a {
+	color: #898989;
+}
+
+#menu {
+	margin-bottom: 0 !important;
+}
+
+
+.sub_menu01 {
+	font-size: 1.1em;
+	font-weight: 700;
+	/*padding-top: 0.2em;*/
+	padding-left: 0;
+}
+
+.sub_menu02 {
+	font-size: 15px;
+	font-weight: 500;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.sub_menu02 a {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.sub_menu02 a:hover {
+	color: #fff;
+}
+
+.sub_menu_row {
+	padding-top: 0.4em;
+	padding-bottom: 1em;
+}
+
+.sub_menu_row .col a:hover {
+	color: #0095A8;
+}
+
+.arrow_r {
+	padding-bottom: 0.3em;
+}
+
+
+.border_r {
+	border-radius: 5px !important;
+}
+
+
+.drop {
+	max-width: 1350px !important;
+	margin: 0 auto;
+}
+
+.drop_c {
+	margin: 0 auto;
+	/*	display: flex;*/
+	position: fixed;
+	width: 145px;
+	top: 3.5em;
+	z-index: 1030;
+	background: rgba(249, 249, 249, 0.8);
+	border: 1px solid #bdbdbd;
+	border-radius: 12px;
+	line-height: 120%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.drop_c_box {
+	max-width: 86.6666% !important;
+}
+
+.dropdown-item {
+	font-size: 15px;
+	line-height: 120%;
+	font-weight: 500;
+	padding: .25rem 1.2rem;
+
+}
+
+.dropdown-item:hover {
+	background-color: rgba(255, 255, 255, 0.00);
+	color: #0095A8;
+}
+
+.cursor_p {
+	cursor: pointer;
+}
+
+
+/* display */
+.display_none {
+	display: none;
+}
+
+.display_block {
+	display: block;
+}
+
+.display_flex {
+	display: flex;
+}
+
+.bd_leftSmall {
+	border-left: 2px solid;
+	height: 25px;
+	padding-right: 25px !important;
+	padding-left: 25px !important;
+	color: #434343;
+}
+
+.bd_rightSmall {
+	border-right: 2px solid;
+	height: 25px;
+	margin-left: 50px !important;
+	color: #434343;
+}
+
+
+.bd_b {
+	border-bottom: 1px solid #fff;
+}
+
+.txtAlign_cen {
+	text-align: center;
+}
+
+.fz_14 {
+	font-size: 14px;
+}
+
+.fz_20 {
+	font-size: 20px;
+}
+
+.ft_num {
+	color: #0095A8 !important;
+	font-size: 25px;
+	font-weight: 600 !important;
+}
+
+.h_800 {
+	height: 800px;
+}
+
+.bl_modal_ttl_c {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.of_s {
+	overflow: scroll;
+}
+
+.bd_t2 {
+	border-top: 2px solid;
+}
+
+.bd_t1 {
+	border-top: 1px solid;
+}
+
+.bd_b1 {
+	border-bottom: 1px solid;
+}
+
+.p_4 {
+	padding: 4px;
+}
+
+.w_398 {
+	width: 398px;
+}
+
+.w_70 {
+	width: 70px;
+}
+
+.w_120 {
+	width: 120px;
+}
+
+.w_180 {
+	width: 180px;
+}
+
+.w_194 {
+	width: 194px;
+}
+
+.h_36 {
+	height: 36px;
+}
+
+.h_86 {
+	height: 86px;
+}
+
+.h_90 {
+	height: 90px;
+}
+
+.h_100 {
+	height: 100px;
+}
+
+.pt_38 {
+	padding-top: 38px;
+}
+
+.mt_4 {
+	margin-top: 4px;
+}
+
+
+.py_07 {
+    padding-bottom: 0.7rem !important;
+    padding-top: 0.7rem !important;
+}
+
+
+
+.pr_2{
+    padding-right: 2rem;
+}
+
+.point_color {
+    color: #0095A8;
+}
+.color_white {
+    color: #fff;
+}
+.bg_point {
+    background-color: #0095A8;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*서브 사이드바 */
+
+.tab_w {
+    height:60px;
+    line-height:60px;
+    border-left:1px solid #e5e5e5;
+    border-right:1px solid #e5e5e5;
+}
+.tab_r {
+    height:60px;
+    line-height:60px;
+    border-right:1px solid #e5e5e5;
+}
+
+.sidebar {
+    width:183px; 
+    border:1px solid #e5e5e5;
+    border-top:3px solid #e5e5e5;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #0095A8;
+    color: #fff;
+}
+
+.sidebar .active {
+    background-color: #0095A8;
+    color: #fff;
+    font-weight: 700;
+}
+.sidebar a {
+    color:#434343;
+}
+
+
+.border_b {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.top-tab .col-2 {
+    
+        -ms-flex: 0 0 12.666667%;
+        flex: 0 0 12.666667%;
+        max-width: 12.666667%;
+}
+
+
+
+
+.select_box {
+    width: 100%;
+}
+
+.select_box .box {
+    display: inline-block;
+    position: relative;
+    width: 191px;
+}
+
+.select_box .box .select {
+    position: relative;
+    box-sizing: border-box;
+    line-height: 30px;
+    cursor: pointer;
+    left:-15px;
+}
+
+
+.select_box .box .select:after {
+    content: '';
+    background: url(https://yongin.s3.ap-northeast-2.amazonaws.com/arrow_down.png);
+    background-size: 16px 13px;
+    width: 16px;
+    height: 13px;
+    display: inline-block;
+    position: absolute;
+    top: 9px;
+    right: 15px;
+}
+
+.select_box.on .box .select:after {
+    content: '';
+    background: url(https://yongin.s3.ap-northeast-2.amazonaws.com/arrow_down.png);
+    transform: rotate(180deg);
+    background-size: 16px 13px;
+    width: 16px;
+    height: 13px;
+    display: inline-block;
+    position: absolute;
+    top: 9px;
+    right: 15px;
+}
+
+.type02 .box .select:after {
+    background: url(https://yongin.s3.ap-northeast-2.amazonaws.com/arrow_down_blue.png);
+}
+
+.type02.on .box .select:after {
+    background: url(https://yongin.s3.ap-northeast-2.amazonaws.com/arrow_down_blue.png);
+    transform: rotate(180deg);
+}
+
+.select_box .box .list {
+    display: none;
+    overflow-y: auto;
+    position: absolute;
+    top: 44px;
+    left: -16px;
+    z-index: 10;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+	background-color: #fff;
+}
+
+
+.select_box .box .list::-webkit-scrollbar {
+    width: 10px;
+    height: 0;
+}
+
+.select_box .box .list::-webkit-scrollbar-button:start:decrement,
+.select_box .box .list::-webkit-scrollbar-button:end:increment {
+    display: block;
+    height: 0;
+}
+
+.select_box .box .list::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, .05);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.select_box .box .list::-webkit-scrollbar-thumb {
+    height: 50px;
+    width: 50px;
+    background: rgba(0, 0, 0, .2);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.select_box .box .list>li {
+    box-sizing: border-box;
+    padding: 0 20px;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    cursor: pointer;
+    background-color: #fff;
+}
+.select_box .box .list a {
+	color: #0095A8;
+}
+.select_box .box .list .col {
+    padding: 0 20px;
+    line-height: 45px;
+    cursor: pointer;
+}
+
+.select_box .box .list .col span {
+    padding: 0 20px;
+}
+
+.select_box .box .list>a li:hover {
+    background-color: #ccc;
+}
+
+
+.w_530{
+	width: 530px;
+}
+.w_356{
+	width: 356px;
+}
+.h_43{
+	height: 43px;
+}
+.pt_10{
+	padding-top: 10px;
+}
+.pt_20{
+	padding-top: 20px;
+}
+.pt_40{
+	padding-top: 40px;
+}
+.pt57{
+	padding-top: 57px;
+}
+.pl_53{
+	padding-left: 53px;
+}
+.pl_0{
+	padding-left: 0;
+}
+.pr_0{
+	padding-right: 0;
+}
+.bd_r_un{
+	border-right: unset;
+}
+.bd_r_fff{
+	border-right: 1px solid #fff;
+}
+.bd_l_un{
+	border-left: unset;
+}
+.bd_l_fff{
+	border-left: 1px solid #fff;
+}
+
+.bgc_EFEFEF{
+	background: #EFEFEF;
+}
+.mt_20{
+	margin-top: 20px;
+}
+.ml_20{
+	margin-left: 20px;
+}
+.ml_n80{
+	margin-left: -80px;
+}
+.p_20{
+	padding: 20px;
+}
+.pr_26{
+	padding-right: 26px;
+}
+.fz_15{
+	font-size: 15px;
+}
+.ml_270{
+	padding-left: 270px;
+}
+.mt_45{
+	margin-top: 45px;
+}
+.mb_18{
+	margin-bottom: 18px;
+}
+.mt_80{
+	margin-top: 80px;
+}
+.mt_8{
+	margin-top: 8px;
+}
+.pl_26{
+	padding-left: 26px;
+}
+
+
+.mw_1000 {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.mw_850 {
+	max-width: 850px;
+	margin: 0 auto;		
+}
+.color_white a {
+	color: #fff!important;		
+}
+
+.point_color_box{
+	background: #0095A8; font-weight: 300; padding: 3px 60px;
+}
+.pl_23{
+	padding-left: 23px;
+}
+.lh_30{
+	line-height: 30px;;
+}
+
+
+.top-tab {
+	height:60px; 
+	border-bottom:1px solid #E5E5E5;
+	position: absolute;
+	top: 270px;
+}
+
+
+
+	/* 테블릿 css */
+		
+
+		@media only screen and (max-width: 1366px) and (max-height: 1024px) {
+			.top-tab {
+			padding-right: 0;
+			padding-left: 0;
+			}
+			.top-tab .col-2 {
+				-ms-flex: 0 0 14.666667%;
+				flex: 0 0 14.666667%;
+				max-width: 14.666667%;
+			}
+			.select_box .box {
+				width: 202px;
+			}
+         #navs:hover  .nav_c.roll {  background-color: unset; border-bottom: none;}
+		}
+
+@media only screen and (max-width: 1024px) {
+		.top-tab .col-2 {
+			-ms-flex: 0 0 21.666667%;
+			flex: 0 0 21.666667%;
+			max-width: 21.666667%;
+			}
+			.select_box .box {
+				width: 217px;
+			}
+          #navs:hover  .nav_c.roll {  background-color: unset; border-bottom: none;}
+		}
+
+/* 모바일 css */
+@media only screen and (max-width: 576px) {
+    
+.sidebar {
+    display : none;
+}            
+
+.top-tab .col-2 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.top-tab .col-1 {
+display:none;
+}
+
+.select_box .box {
+    width: calc(100% + 32px);
+}
+
+.select_box .box .select {
+    left: -23px;
+}
+
+.select_box .box .select:after {
+    right: 1px;
+}
+.select_box.on .box .select:after {
+    right: 0px;
+}
+
+.select_box .box .list {
+    line-height: 39px;
+	font-size: 14px;
+}
+#navs:hover  .nav_c.roll {  background-color: unset; border-bottom: none;}
+
+
+}
+</style>
+
+<style>
+  html,body {overflow-x : hidden;
+  }
+
+  .cursor_p a {
+    color: #000;
+  }
+  .cursor_p a:hover {
+    color: #000;
+  }
+    .swiper {
+        width: 100%;
+        height: 45px;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 14px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+
+    .dropdown-toggle::after {
+        display: none;
+    }
+
+    .dropdown-menu {
+        margin-left: 12px !important;
+    }
+
+    .pr_50 {
+        padding-right: 50px !important;
+    }
+
+    .pl_50 {
+        padding-left: 50px !important;
+    }
+
+    .positionSet {
+        margin-top: 15%;
+        margin-left: 35%;
+        text-align: center;
+    }
+
+    a {
+        color: #7E7E7E;
+    }
+
+    .bar {
+        font-size: 13px;
+        color: #7E7E7E;
+    }
+
+
+
+
+    .mainTitle_box {
+        border-top: 2px solid #0095A8;
+        border-bottom: 2px solid #0095A8;
+        background: rgba(255, 255, 255, 0.7);
+        height: 280px;
+    }
+
+    .mainTitle_tet {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .navbarSub_BC {
+        background: #0095A8;
+    }
+
+    dt,
+    dd {
+        padding: 20px;
+        border-bottom: 1px solid #eee;
+    }
+
+    dt {
+        margin-bottom: 5px;
+    }
+
+    dt span {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
+    dt.on {
+        background-color: #0095A8;
+        color: #fff;
+    }
+
+    dd {
+        display: none;
+        line-height: 44px;
+    }
+
+    .lastCol {
+        margin-right: 110px;
+        width: 175px;
+        line-height: 37px;
+    }
+
+    .Rmenubar_con {
+        width: 100px;
+        height: 500px;
+        background: #fff;
+        color: #000;
+        position: fixed;
+        right: 50px;
+        top: 30%;
+        z-index: 10;
+        border: 1px solid #E5E5E5;
+    }
+
+    .top-tab {
+        display: none;
+    }
+
+    .logged_in {
+        display: none;
+    }
+
+    .logged_out {
+        display: block;
+    }
+    a.loginBtn:active { background-color: #0095A8; color: #ffffff;}
+    a:hover {
+        cursor: pointer;
+    }
+
+    .modalTitle {
+        width: 140px;
+        height: 50px;
+        text-align: center;
+        background: #eee;
+        padding-top: 14px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .modalCon {
+        width: 418px;
+        height: 50px;
+        padding: 8px 10px;
+    }
+
+    .cursor_pointer:hover {
+        cursor: pointer;
+    }
+
+    .agree_checkbox {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    .modal_content {
+        height: 600px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .agree_textarea {
+        width: 535px;
+        height: 200px;
+        margin-left: 15px;
+    }
+   .submenu_hover:hover a{ background-color:#0095A8; color:#fff;}
+  .submenu_hover:hover { background-color:#0095A8; color:#fff;}
+
+    @media screen and (max-width:1366px) {
+        .Rmenubar_con {
+            display: none;
+        }
+      #navs:hover  .nav_c.roll {  background-color: unset; border-bottom: none;}
+    }
+
+    @media screen and (max-width:576px) {
+         #navs:hover  .nav_c.roll {  background-color: unset; border-bottom: none;}
+        .ft_num {
+            font-size: 16px;
+        }
+
+        .mt-9 {
+            margin-top: 3rem !important;
+        }
+        .logged_out {
+       		display: inline-block;
+   		 }
+ 	   	.login_wrap { padding: 28px 20px 10px; }
+  	  	.loginBtn {
+ 	   		border: 1px solid #eee;
+    		padding: 5px 11px;
+    		width: fit-content;
+  		  }
+    	a.loginBtn:active { background-color: #0095A8; color: #ffffff;}
+    }
+</style>
+
+
+<div id="navs">
+    <div class="nav_c roll">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <a class="nav-link brand" href="/">
+                <!--상단 로고 그림-->
+                <img src="https://yongin.s3.ap-northeast-2.amazonaws.com/logo_ci_blue.png" alt="Logo" class="logo ">
+            </a>
+            <div class="collapse navbar-collapse mx-auto" id="collapsibleNavbar" >
+                <ul class="navbar-nav mr-auto"></ul>
+                <ul class="navbar-nav"   id="topmenu">
+                    <li class="nav-item bd_leftSmall">
+                        <a class="nav-link " href="/page/?M2_IDX=25967">회사소개</a>
+                    </li>
+                    <li class="nav-item bd_leftSmall">
+                        <a class="nav-link " href="/page/?M2_IDX=25984">상품소개</a>
+                    </li>
+                    <li class="nav-item bd_leftSmall">
+                        <a class="nav-link " href="/board/list.php?M2_IDX=25970">홍보센터</a>
+                    </li>
+                    <li class="nav-item bd_leftSmall">
+                        <a class="nav-link " href="/board/list.php?M2_IDX=25990">고객센터</a>
+                    </li>
+                    <li class="nav-item bd_leftSmall">
+                        <a class="nav-link " href="/page/?M2_IDX=26187">마이페이지</a>
+                    </li>
+                    <li class="nav-item bd_leftSmall">
+                        <a class="nav-link mt__05 logged_out lh_22" href="/log/log.php">로그인</a>
+                        <a class="nav-link logged_out lh_22" href="/memb/memb.add.php">회원가입 </a>
+                        <a class="nav-link logged_in" href="/lib/logoutProc.php">로그아웃</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div id="submenu" class="container-fluid sub_menu bg_fff fixed-top02  text-center" style="display: none;">
+        <div class="container pd_t_05 sub_menu_c mw_1400 ">
+            <div class="row float-right fs_16">
+                <div class="col pd_42 addBC">
+                    <div class="submenu_hover"><a class="v" href="/page/?M2_IDX=25967">인사말</a></div>
+                    <div class="submenu_hover"><a href="/page/?M2_IDX=25976">경영철학</a></div>
+                    <div class="submenu_hover"><a href="/page/?M2_IDX=25977">CI소개</a></div>
+                    <div class="submenu_hover"><a href="/page/?M2_IDX=25978">윤리경영</a></div>
+                    <div class="submenu_hover"><a href="/page/?M2_IDX=25979">연혁</a></div>
+                    <div class="submenu_hover"><a href="/page/?M2_IDX=25980">조직도</a></div>
+                    <div class="submenu_hover"><a href="/page/?M2_IDX=25981">소비자중심경영(CCM)</a></div>
+                    <div class="submenu_hover"><a href="/page/?M2_IDX=25982">사회공헌활동</a></div>
+                    <div class="submenu_hover"><a href="/page/?M2_IDX=25983">가족회사소개</a></div>
+                    <div class="submenu_hover"><a href="/page/?M2_IDX=25997">오시는 길</a></div>
+                </div>
+                <div class="col pd_42 addBC">
+                    <div class="submenu_hover"><a href="/page/?M2_IDX=25984">상조</a></div>
+                    <div class="submenu_hover"><a href="/page/?M2_IDX=25985">웨딩</a></div>
+                    <div class="submenu_hover"><a href="/page/?M2_IDX=25986">크루즈</a></div>
+                    <!--                    <div class="submenu_hover"><a href="/page/?M2_IDX=25987">기업서비스</a></div>-->
+                </div>
+                <div class="col pd_42 addBC">
+                    <div class="submenu_hover"><a href="/board/list.php?M2_IDX=25970">보도자료</a></div>
+                    <!--                    <div class="submenu_hover"><a href="/page/?M2_IDX=25988">장례시설정보</a></div>-->
+                    <div class="submenu_hover"><a href="/page/?M2_IDX=25989">장례정보</a></div>
+                </div>
+                <div class="col pd_42 addBC">
+                    <div class="submenu_hover"><a href="/board/list.php?M2_IDX=25990">공지사항</a></div>
+                    <div class="submenu_hover"><a href="/board/list.php?M2_IDX=25971">회사소식</a></div>
+                    <div class="submenu_hover"><a href="/page/?M2_IDX=26108">FAQ</a></div>
+                    <div class="submenu_hover"><a href="/board/list.php?M2_IDX=25996">고객의 소리(VOC)</a></div>
+                    <div class="submenu_hover"><a href="/board/list.php?M2_IDX=25993">고객이용후기</a></div>
+                   <!--div class="submenu_hover"><a class="v" href="/page/?M2_IDX=26745">소비자분쟁해결기준</a></div-->
+                    <div class="submenu_hover"><a href="/board/list.php?M2_IDX=25994">자료실</a></div>
+                </div>
+                <div class="col addBC lastCol">
+                    <div class="submenu_hover"><a href="/page/?M2_IDX=26187">상조회원등록</a></div>
+                    <div class="submenu_hover"><a href="/my/memb.info.php">회원정보수정</a></div>
+                    <div class="submenu_hover"><a href="/page/?M2_IDX=25973">가입내역조회</a></div>
+                    <div class="submenu_hover"><a href="/page/?M2_IDX=25974">납부내역조회</a></div>
+                    <div class="submenu_hover protocoler"><a href="/page/?M2_IDX=26129">의전팀장조회</a></div>
+                    <div class="submenu_hover protocoler"><a href="/page/?M2_IDX=26574">법인장례지원</a></div>
+                </div>
+            </div>
+        </div>
+  </div>
+</div>
+
+<!--------------------------햄붜거------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+<a href="#" class="hamburger-button">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</a>
+<div class="overlay">
+    <nav class="hamburger_menu">
+    	<div class="login_wrap">
+            <a class="logged_out loginBtn" href="/log/log.php">로그인<br></a>
+            <a class="logged_out loginBtn" href="/memb/memb.add.php">회원가입<br></a>
+            <a class="logged_in loginBtn" href="/lib/logoutProc.php">로그아웃<br></a>
+    	</div>
+        <dl>
+            <dt>
+                <span>회사소개</span>
+            </dt>
+            <dd>
+                <a href="/page/?M2_IDX=25967">인사말</a><br>
+                <a href="/page/?M2_IDX=25976">경영철학</a><br>
+                <a href="/page/?M2_IDX=25977">CI소개</a><br>
+                <a href="/page/?M2_IDX=25978">윤리경영</a><br>
+                <a href="/page/?M2_IDX=25979">연혁</a><br>
+                <a href="/page/?M2_IDX=25980">조직도</a><br>
+                <a href="/page/?M2_IDX=25981">소비자중심경영(CCM)</a><br>
+                <a href="/page/?M2_IDX=25982">사회공헌활동</a><br>
+                <a href="/page/?M2_IDX=25983">가족회사소개</a><br>
+                <a href="/page/?M2_IDX=25997">오시는 길</a>
+            </dd>
+            <dt><span>상품소개</span></dt>
+            <dd>
+                <a href="/page/?M2_IDX=25984">상조</a><br>
+                <a href="/page/?M2_IDX=25985">웨딩</a><br>
+                <a href="/page/?M2_IDX=25986">크루즈</a><br>
+                <!--a href="/page/?M2_IDX=25987">기업서비스</a><br-->
+            </dd>
+            <dt><span>홍보센터</span></dt>
+            <dd>
+                <a href="/board/list.php?M2_IDX=25970">보도자료</a><br>
+                <!--a href="/page/?M2_IDX=25988">장례시설정보</a><br-->
+                <a href="/page/?M2_IDX=25989">장례정보</a><br>
+            </dd>
+            <dt><span>고객센터</span></dt>
+            <dd>
+                <a href="/board/list.php?M2_IDX=25990">공지사항</a><br>
+                <a href="/board/list.php?M2_IDX=25971">회사소식</a><br>
+                <a href="/page/?M2_IDX=26108">FAQ</a><br>
+                <a href="/board/list.php?M2_IDX=25996">고객의 소리(VOC)</a><br>
+                <a href="/board/list.php?M2_IDX=25993">고객이용후기</a><br>
+               <!--a href="/page/?M2_IDX=26745">소비자분쟁해결기준</a><br-->
+                <a href="/board/list.php?M2_IDX=25994">자료실</a><br>
+            </dd>
+            <dt><span>마이페이지</span></dt>
+            <dd>
+                <a href="/page/?M2_IDX=26187">상조회원등록</a><br>
+                <a href="/my/memb.info.php">회원정보수정</a><br>
+                <a class="" href="/page/?M2_IDX=25973">가입내역조회</a><br>
+                <a class="" href="/page/?M2_IDX=25974">납부내역조회</a><br>
+                <a class="protocoler" href="/page/?M2_IDX=26129">의전팀장조회</a><br>
+                <a class="protocoler" href="/page/?M2_IDX=26574">법인장례지원</a><br>
+            </dd>
+            <!--<dt><span>로그인/회원가입</span></dt>
+            <dd>
+                <a class="logged_out" href="/log/log.php">로그인<br></a>
+                <a class="logged_out" href="/memb/memb.add.php">회원가입<br></a>
+                <a class="logged_in" href="/lib/logoutProc.php">로그아웃<br></a>
+            </dd>-->
+        </dl>
+    </nav>
+</div>
+
+<!-- 우측 메뉴바 -->
+<div class="container-fluid Rmenubar_con">
+    <div class="row Rnavbar_row">
+        <div class="col m_auto">
+                <div class="Rnavbar"> <a href="tel:1577-3750">1577<br>-3750</a></div>
+                <div class="Rnavbar_sub">고객상담</div>
+        </div>
+    </div>
+    <div class="row Rnavbar_row">
+        <div class="col m_auto p-0">
+                <div class="Rnavbar" style="padding: 0 15px;"> <a href="tel:1577-4936">1577<br>-4936  </a></div>
+                <div class="Rnavbar_sub">24시간장례접수</div>
+        </div>
+    </div>
+    <div class="row Rnavbar_row">
+        <div class="col m_auto">
+            <div class="openModal cursor_p">
+                <img src="https://yongin.s3.ap-northeast-2.amazonaws.com/support.png" alt="고객상담" class="mb_8">
+                <div class="Rnavbar_sub">가입상담</div>
+            </div>
+        </div>
+    </div>
+    <div class="row Rnavbar_row">
+        <div class="col m_auto p-0">
+            <div class="cursor_p" onclick="location.href='/page/?M2_IDX=25973'">
+                <img src="https://yongin.s3.ap-northeast-2.amazonaws.com/resume.png" alt="가입내역조회" class="mb_8">
+                <div class="Rnavbar_sub">가입내역조회</div>
+            </div>
+        </div>
+    </div>
+    <div class="row Rnavbar_row">
+        <div class="col m_auto">
+            <div class="cursor_p">
+                <a href="/board/list.php?M2_IDX=25996">
+                <img src="https://yongin.s3.ap-northeast-2.amazonaws.com/testimonial.png" alt="고객의 소리" class="mb_8">
+                <div class="Rnavbar_sub">고객의 소리</div></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal -->
+<div class="bl_modal_wrapper">
+    <div class="bl_modal h_800">
+        <div class="bl_modal_header" style="display: block;">
+            <div class="bl_modal_ttl bl_modal_ttl_c">온라인 상담신청</div>
+            <div class="bl_modal_clsBtn"><img src="https://yongin.s3.ap-northeast-2.amazonaws.com/ic-modal-cls-btn.png"
+                    alt="cls-btn" width="16px"></div>
+        </div>
+        <form id="consult">
+            <div class="bl_modal_body">
+                <div class="modal_content">
+                    <div class="bl_modal_row__flex bd_t2">
+                        <div class="modalTitle">
+                            이름</div>
+                        <div class="modalCon">
+                            <input name="name" class="p_4 w_398" type="text">
+                        </div>
+                    </div>
+                    <div class="bl_modal_row__flex bd_t1">
+                        <div class="modalTitle" style="width:126px">
+                            연락처</div>
+                        <div class="modalCon">
+                            <select name="phone1" class="w_70 h_36">
+                                <option value="010">010</option>
+                                <option value="011">011</option>
+                            </select>
+                            <input name="phone2" class="w_120 p_4" type="text">
+                            <input name="phone3" class="w_120 p_4" type="text">
+                        </div>
+                    </div>
+                    <div class="bl_modal_row__flex bd_t1">
+                        <div class="modalTitle h_90 pt_38" style="height: 90px; padding-top: 38px;">
+                            이메일</div>
+                        <div class="modalCon h_90" style="height: 90px">
+                            <input name="emailname" class="w_180 p_4" type="text">
+                            @
+                            <input name="emailhost" class="w_194 p_4" type="text">
+                            <select name="emailhost_auto" class="w_398 h_36 mt_4">
+                                <option value="">직접입력</option>
+                                <option value="gmail.com">gmail.com</option>
+                                <option value="naver.com">naver.com</option>
+                                <option value="daum.net">daum.net</option>
+                                <option value="hanmail.net">hanmail.net</option>
+                                <option value="nate.com">nate.com</option>
+                                <option value="hotmail.com">hotmail.com</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="bl_modal_row__flex bd_t1">
+                        <div class="modalTitle">
+                            상담시간</div>
+                        <div class="modalCon">
+                            <select name="wish_time" class="w_398 h_36">
+                                <option value="">상담시간</option>
+                                <option value="09:00~10:00">09:00~10:00</option>
+                                <option value="10:00~11:00">10:00~11:00</option>
+                                <option value="11:00~12:00">11:00~12:00</option>
+                                <option value="12:00~13:00">12:00~13:00</option>
+                                <option value="13:00~14:00">13:00~14:00</option>
+                                <option value="14:00~15:00">14:00~15:00</option>
+                                <option value="15:00~16:00">15:00~16:00</option>
+                                <option value="16:00~17:00">16:00~17:00</option>
+                                <option value="17:00~18:00">17:00~18:00</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="bl_modal_row__flex bd_t1">
+                        <div class="modalTitle">
+                            상담구분</div>
+                        <div class="modalCon">
+                            <select name="category_id" class="w_398 h_36">
+                                <option value="">상담구분</option>
+                                <option value="1">장례상품</option>
+                                <option value="2">웨딩상품</option>
+                                <option value="3">크루즈상품</option>
+                                <option value="4">업무제휴</option>
+                                <option value="5">채용신청</option>
+                                <option value="6">기타상담</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="bl_modal_row__flex bd_t1 bd_b1">
+                        <div class="modalTitle pt_38 h_100" style="height: 100px; padding-top: 38px;">
+                            상담내용</div>
+                        <div class="modalCon" style="height: 100px;">
+                            <textarea name="content" style="width: 398px; height: 86px;"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row" style="padding-top: 20px; padding-bottom: 10px;">
+                        <div class="col-8">
+                            <strong>개인정보수집 및 이용에 대한 안내</strong> - 필수사항
+                        </div>
+                        <div class="col agree_checkbox">
+                            <input name="is_personal_agree" type="checkbox"> 약관동의
+                        </div>
+                        <!-- 이용약관 -->
+                        <textarea class="agree_textarea" readonly>
+    당사는 '개인정보보호법'에 따라 귀하의 개인정보를 다음과 같이 수집.이용하고자 합니다.
+    개인정보의 수집.이용 목적
+    - 서비스 상담 및 이용권유, 광고 및 각종 서비스, 이벤트 안내, 설문 조사를 위한 정보 확보
+    - 회원관리와 각종 서비스(온라인 컨텐츠, 상조,웨딩,추모관련 서비스) 이용의사 확인
+    - 관련 서비스인, 용인공원 이용의사 확인
+
+    수집하는 개인정보의 항목
+    - 성명, 나이,주민번호앞자리(또는 출생년월일) 성별, 휴대폰번호, 이메일, 주거주지 및 주소, 방문이유, 방문에정일자,
+
+    개인정보의 보유 및 이용기간
+    - 개인정보 삭제 및 탈퇴를 요청할 때까지 보유.이용합니다.
+    - 계약자인 경우 개인정보에 관한 회사 내부 방침에 따라 개인정보를 보유합니다.
+    - 단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간 동안 보존합니다.
+
+    가. 회사 내부 방침에 의한 정보보유 사유
+
+    -개인정보 삭제 및 회원탈퇴 신청기록
+    　보존 이유 : 부정 이용 방지
+    　보존 기간 : 회원탈퇴일부터 2년
+    　보존 항목 : 아이디, 이름, 주민번호 앞자리, 이메일
+
+    나. 관련법령에 의한 정보보유 사유
+
+    상법, 전자상거래 등에서의 소비자보호에 관한 법률 등 관계법령의 규정에 의하여 보존할 필요가 있는 경우 회사는 관계법령에서 정한 일정한 기간 동안 회원정보를 보관합니다. 이 경우 회사는 보관하는 정보를 그 보관의 목적으로만 이용하며 보존기간은 아래와 같습니다.
+
+    - 계약 또는 청약철회 등에 관한 기록
+    　보존 이유 : 전자상거래 등에서의 소비자보호에 관한 법률
+    　보존 기간 : 5년
+
+    - 대금결제 및 재화 등의 공급에 관한 기록
+    　보존 이유 : 전자상거래 등에서의 소비자보호에 관한 법률
+    　보존 기간 : 5년
+
+    - 전자금융 거래에 관한 기록
+    　보존 이유 : 전자금융거래법
+    　보존 기간 : 5년
+
+    - 소비자의 불만 또는 분쟁처리에 관한 기록
+    　보존 이유 : 전자상거래 등에서의 소비자보호에 관한 법률
+    　보존 기간 : 3년
+
+    - 본인 확인에 관한 기록
+    　보존 이유 : 정보통신 이용촉진 및 정보보호 등에 관한 법률
+    　보존 기간 : 6개월
+
+    - 웹사이트 방문기록
+    　보존 이유 : 통신비밀보호법
+    　보존 기간 : 3개월
+
+    ※ 정보동의 시 상담을 위해 최소한의 정보만 수집ㆍ이용하게 되며, 본 동의를 거부하시는 경우에는 해당 서비스이용 및 상담 등 정상적인 서비스 제공이 불가능 할 수 있습니다.
+    [소비자 권익 보호에 관한 사항]
+
+    최소한의 정보처리 및 동의거부에 대한 안내
+    정보동의 시 상담 및 고객관리 등을 위해 최소한의 정보만 수집ㆍ이용하게 되며, 본 동의를 거부하시는 경우에는 해당 서비스의 이용 및 상담 등 정상적인 서비스 제공이 불가능할 수 있음을 알려 드립니다.
+
+    개인정보 제공동의 철회
+    개인정보 수집ㆍ이용에 동의한 이후에도 전화[대표번호], 서면, 메일 등을 통해 고객정보 관리 등에 대한 개인정보 처리 중지를 요청할 수 있습니다.
+
+    상품권유 중지청구(Do-Not Call)
+    개인정보 제공 및 이용에 동의한 이후에도 전화[대표번호], 서면 등을 통해 마케팅활동에 대한 중지를 요청할 수 있습니다.
+
+    [개인정보 제공에 관한 사항]
+
+    개인정보를 제공 받는 자 : 이벤트/마케팅 담당
+
+    개인정보를 제공 받는 자의 이용 목적 : 회원관리 상담 및 자료요청 의사 확인
+    서비스 상담 및 이용 권유, 각종 서비스 및 이벤트 안내
+
+    제공할 개인정보의 내용 : 개인식별정보 (성명, 나이, 연락처, 이메일)
+
+    제공받는 자의 개인정보 보유 및 이용기간
+    - 개인정보 삭제 및 탈퇴를 요청할 때까지 보유ㆍ이용합니다.
+    - 계약자인 경우 개인정보에 관한 회사 내부 방침에 따라 개인정보를 보유입니다.
+    - 단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간 동안 보존합니다.
+
+    가. 회사 내부 방침에 의한 정보보유 사유
+
+    -개인정보 삭제 및 회원탈퇴 신청기록
+    　보존 이유 : 부정 이용 방지
+    　보존 기간 : 회원탈퇴일부터 2년
+    　보존 항목 : 아이디, 이름, 주민번호 앞자리, 이메일
+
+    나. 관련법령에 의한 정보보유 사유
+
+    상법, 전자상거래 등에서의 소비자보호에 관한 법률 등 관계법령의 규정에 의하여 보존할 필요가 있는 경우 회사는 관계법령에서 정한 일정한 기간 동안 회원정보를 보관합니다. 이 경우 회사는 보관하는 정보를 그 보관의 목적으로만 이용하며 보존기간은 아래와 같습니다.
+
+    - 계약 또는 청약철회 등에 관한 기록
+    　보존 이유 : 전자상거래 등에서의 소비자보호에 관한 법률
+    　보존 기간 : 5년
+
+    - 대금결제 및 재화 등의 공급에 관한 기록
+    　보존 이유 : 전자상거래 등에서의 소비자보호에 관한 법률
+    　보존 기간 : 5년
+
+    - 전자금융 거래에 관한 기록
+    　보존 이유 : 전자금융거래법
+    　보존 기간 : 5년
+
+    - 소비자의 불만 또는 분쟁처리에 관한 기록
+    　보존 이유 : 전자상거래 등에서의 소비자보호에 관한 법률
+    　보존 기간 : 3년
+
+    - 본인 확인에 관한 기록
+    　보존 이유 : 정보통신 이용촉진 및 정보보호 등에 관한 법률
+    　보존 기간 : 6개월
+
+    - 웹사이트 방문기록
+    　보존 이유 : 통신비밀보호법
+    　보존 기간 : 3개월
+                    </textarea>
+                    </div>
+
+                    <div class="row" style="padding-top: 20px; padding-bottom: 10px;">
+                        <div class="col-8">
+                            <strong>마케팅 활용에 대한 안내</strong> - 선택사항
+                        </div>
+                        <div class="col agree_checkbox">
+                            <input name="is_agree" type="checkbox"> 약관동의
+                        </div>
+                        <!-- 마케팅이용 -->
+                        <textarea class="agree_textarea" readonly>
+개인정보취급방침 및 개인정보 제공동의 관한 사항
+
+개인정보를 제공 받는 자 : 이벤트/마케팅 담당
+
+개인정보를 제공 받는 자의 이용 목적 : 회원관리 상담 및 자료요청 의사 확인
+서비스 상담 및 이용 권유, 각종 서비스 및 이벤트 안내
+
+제공할 개인정보의 내용 : 개인식별정보 (성명, 나이, 연락처, 이메일)
+
+제공받는 자의 개인정보 보유 및 이용기간
+- 개인정보 삭제 및 탈퇴를 요청할 때까지 보유ㆍ이용합니다.
+- 계약자인 경우 개인정보에 관한 회사 내부 방침에 따라 개인정보를 보유입니다.
+- 단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간 동안 보존합니다.
+
+가. 회사 내부 방침에 의한 정보보유 사유
+-개인정보 삭제 및 회원탈퇴 신청기록
+　보존 이유 : 부정 이용 방지
+　보존 기간 : 회원탈퇴일부터 2년
+　보존 항목 : 아이디, 이름, 주민번호 앞자리, 이메일
+
+나. 관련법령에 의한 정보보유 사유
+
+상법, 전자상거래 등에서의 소비자보호에 관한 법률 등 관계법령의 규정에 의하여 보존할 필요가 있는 경우 회사는 관계법령에서 정한 일정한 기간 동안 회원정보를 보관합니다. 이 경우 회사는 보관하는 정보를 그 보관의 목적으로만 이용하며 보존기간은 아래와 같습니다.
+
+- 계약 또는 청약철회 등에 관한 기록
+　보존 이유 : 전자상거래 등에서의 소비자보호에 관한 법률
+　보존 기간 : 5년
+
+- 대금결제 및 재화 등의 공급에 관한 기록
+　보존 이유 : 전자상거래 등에서의 소비자보호에 관한 법률
+　보존 기간 : 5년
+
+- 전자금융 거래에 관한 기록
+　보존 이유 : 전자금융거래법
+　보존 기간 : 5년
+
+- 소비자의 불만 또는 분쟁처리에 관한 기록
+　보존 이유 : 전자상거래 등에서의 소비자보호에 관한 법률
+　보존 기간 : 3년
+
+- 본인 확인에 관한 기록
+　보존 이유 : 정보통신 이용촉진 및 정보보호 등에 관한 법률
+　보존 기간 : 6개월
+
+- 웹사이트 방문기록
+　보존 이유 : 통신비밀보호법
+　보존 기간 : 3개월
+                    </textarea>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="bl_modal_footer hp_txt_r">
+            <button class="el_btn el_btn__primary el_btn__lg" id="confirm" style="background: #0095A8;">상담
+                신청</button>
+        </div>
+    </div>
+</div>
+
+
+<script>  let subMenu = document.getElementById("submenu");
+
+</script>
+
+<script>
+
+
+    $(() => {
+        $('head').append('<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>');
+        checkLogin();
+        //        userInfo.checkLogin();
+        // console.log('???');
+        $('.join_hover').hover(() => {
+            // $(this).find('img').attr('src', 'https://yongin.s3.ap-northeast-2.amazonaws.com/join.png');
+            $(this).addClass('onHover');
+            $(this).removeClass('offHover');
+        }, () => {
+            // $(this).find('img').attr('src', 'https://yongin.s3.ap-northeast-2.amazonaws.com/join (1).png');
+            $(this).addClass('offHover');
+            $(this).removeClass('onHover');
+        });
+
+        $('.call_hover').hover(() => {
+            // $(this).find('img').attr('src', 'https://yongin.s3.ap-northeast-2.amazonaws.com/call center (1).png');
+            $(this).addClass('onHover');
+            $(this).removeClass('offHover');
+            // $(this).children().css('color', '#fff');
+        }, () => {
+            // $(this).find('img').attr('src', 'https://yongin.s3.ap-northeast-2.amazonaws.com/call center.png');
+            $(this).addClass('offHover');
+            $(this).removeClass('onHover');
+            // $(this).children().css('color', '#434343');
+        });
+
+        $('.funeral_hover').hover(() => {
+            // $(this).find('img').attr('src', 'https://yongin.s3.ap-northeast-2.amazonaws.com/funeral (1) 1.png');
+            $(this).addClass('onHover');
+            $(this).removeClass('offHover');
+        }, () => {
+            // $(this).find('img').attr('src', 'https://yongin.s3.ap-northeast-2.amazonaws.com/funeral.png');
+            $(this).addClass('offHover');
+            $(this).removeClass('onHover');
+        });
+
+        $('.addBC').hover(() => {
+            let children = $(this).children().children();
+            $(this).css('background', '#0095A8');
+            $(children).css('color', '#fff');
+        }, () => {
+            let children = $(this).children().children();
+            $(this).css('background', '#fff');
+            $(children).css('color', '#7E7E7E');
+        });
+
+        $('.hamburger-button').on('click', function (event) {
+            event.preventDefault();
+            $(this).toggleClass('active');
+            $('.overlay').toggleClass('visible');
+        });
+
+   if ($(window).width() > 1000) {
+            $('#topmenu').hover(function () {
+                subMenu.style.display = "block";
+                window.event.pageY;
+            });
+            window.addEventListener('mousemove', function (event) {
+                if (subMenu.style.display == 'block' && event.pageY > 460) {
+                    submenu.style.display = 'none';
+                }
+            });
+
+
+        }
+
+        // 모달 열기
+        $('.openModal').on('click', () => {
+            $('.bl_modal_wrapper').show();
+        });
+        // 모달 닫기
+        $('.bl_modal_clsBtn').on('click', () => {
+            $('.bl_modal_wrapper').hide();
+        });
+        // 확인 버튼
+        $('#confirm').on('click', function () {
+            consult.sendModalForm($('#consult'));
+        });
+
+
+    });
+
+    //ready End
+
+    var acodian = {
+
+        click: function (target) {
+            var _self = this,
+                $target = $(target);
+            $target.on('click', function () {
+                var $this = $(this);
+                if ($this.next('dd').css('display') == 'none') {
+                    $('dd').slideUp();
+                    _self.onremove($target);
+
+                    $this.addClass('on');
+                    $this.next().slideDown();
+                } else {
+                    $('dd').slideUp();
+                    _self.onremove($target);
+
+                }
+            });
+        },
+        onremove: function ($target) {
+            $target.removeClass('on');
+        }
+
+    };
+    acodian.click('dt');
+
+    //로그인판정
+    const apikey = 'zbvopxjrao3t5emhuvmrm7dyrnf6oprc';
+    const serverUrl = 'https://dev.novaflo.co.kr/';
+
+    const checkLogin = () => {
+        $.ajax({
+            url: '/api/login.nx',
+            data: { "KEY": apikey, "SESS_ID": document.cookie.match('nx_session=([^;]*)')[1] },
+            type: 'POST',
+        }).done((data) => {
+            if (data.success === true) {
+                console.log('login Success!');
+                $('.logged_out').css({ display: 'none' });
+                $('.logged_in').css({ display: 'block' });
+                checkProtocoler();
+            } else {
+                console.log('login Nothing!');
+            }
+        }).fail((jqXHR, textStatus, errorThrown) => {
+            console.log('login Error!' + textStatus + " : " + errorThrown);
+            return false;
+        });
+
+    };
+
+    const checkProtocoler = () => {
+        $.ajax({
+            url : "/api/info.nx",
+            data: { "KEY": apikey, "SESS_ID": document.cookie.match('nx_session=([^;]*)')[1], "param" : "level"},
+            type: 'POST',           
+            async: false,
+        }).done((data)=>{
+            if(data.items.level > 4){
+                $('.protocoler').show();
+            }
+        }).fail((jqXHR, textStatus, errorThrown) => {
+            console.log('Info Error!' + textStatus + " : " + errorThrown);
+            return false;
+        });
+    }
+
+
+    var consult = {
+        sendModalForm: function ($form) {
+            let formData = $form.serializeArray();
+            console.log(formData);
+            if (formData[0].value == '' || formData[2].value == '' || formData[3].value == '') {
+                alert('이름, 전화번호는 필수정보입니다.');
+                return false;
+            }
+            if (formData.length > 9 && formData[10] != undefined && formData[10].name == "is_personal_agree") {
+                //데이터선가공
+                let tel = formData[1].value + "-" + formData[2].value + "-" + formData[3].value;
+                let email;
+                let isAgree = false;
+
+                if (formData[6].value == '') {
+                    email = formData[4].value + "@" + formData[5].value;
+                } else {
+                    email = formData[4].value + "@" + formData[6].value;
+                }
+                if (formData.length > 11) {
+                    isAgree = formData[11].value == "on";
+                }
+                $.ajax({
+                    url: serverUrl + 'api/consult/',
+                    type: "POST",
+                    data: {
+                        "category_id": formData[8].value,
+                        "name": formData[0].value,
+                        "tel": tel,
+                        "email": email,
+                        "wish_time": formData[7].value,
+                        "is_agree": isAgree,
+                        "content": formData[9].value,
+                    },
+                    //                    jsonp : "callback",
+                    async: false,
+                    statusCode: {
+                        201: (data) => { consult.handle201(data) },
+                    }
+                }).fail((jqXHR, textStatus, errorThrown) => { consult.handle404(jqXHR, textStatus, errorThrown) });
+            } else {
+                alert("개인정보 수집에 동의하셔야 합니다.")
+            }
+
+
+        },
+
+        handle201: function (data, status, jqXHR) {
+            console.log("NAME", data);
+            alert(data.name + "님의 상담내용이 접수되었습니다. 요청하신 시간에 연락드리겠습니다.");
+            $('.bl_modal_wrapper').hide();
+        },
+        handle404: function (jqXHR, textStatus, errorThrown) {
+            console.log('API Server ' + textStatus + " : " + errorThrown);
+            alert('전송에 실패하였습니다.');
+        },
+    };
+
+
+</script>

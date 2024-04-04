@@ -1,0 +1,624 @@
+<style>
+    .nav_c {
+        position: relative;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        color: #434343 !important;
+    }
+    .bd_leftSmall {
+        color: #434343;
+    }
+
+    \.nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+        color: #0095A8;
+        background: #fff;
+        border-color: #0095A8 #0095A8 #fff;
+    }
+
+    .nav-tabs .nav-link {
+        border-color: #fff #fff #0095A8 #fff;
+        background: #EFEFEF;
+        color: #7E7E7E;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        color: #434343;
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    td,
+    th {
+        border: 1px solid #7E7E7E;
+        text-align: center;
+        padding: 8px;
+        font-weight: 300 !important;
+    }
+
+    th {
+        background: #0095A8;
+        color: #fff;
+        border-right: 3px solid #fff;
+        border-left: 3px solid #fff;
+    }
+
+    td {
+        border-right: 3px solid #fff;
+        border-left: 3px solid #fff;
+    }
+
+    .disc>li {
+        list-style: disc
+    }
+
+    .sidebar {
+        height: 658px;
+
+    }
+
+    .mw_820 {
+        max-width: 820px;
+        margin: 0 auto;
+    }
+
+    .polygon1 {
+        background: url("https://yongin.s3.ap-northeast-2.amazonaws.com/Polygon_1.png");
+        height: 144px;
+        display: table;
+    }
+    .polygon2 {
+        background: url("https://yongin.s3.ap-northeast-2.amazonaws.com/Polygon_2.png");
+        height: 144px;
+        display: table;
+    }
+    .polygon3 {
+        background: url("https://yongin.s3.ap-northeast-2.amazonaws.com/Polygon_3.png");
+        height: 144px;
+        display: table;
+    } .polygon4 {
+          background: url("https://yongin.s3.ap-northeast-2.amazonaws.com/Polygon_4.png");
+          height: 144px;
+          display: table;
+      }
+    .polygon5 {
+        background: url("https://yongin.s3.ap-northeast-2.amazonaws.com/Polygon_5.png");
+        height: 144px;
+        display: table;
+    }
+
+    .poly_item {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .poly {
+        display: table;
+    }
+    .poly_item2 {
+        display: table-cell;
+        vertical-align:bottom;
+    }
+
+    .pol_le {
+        padding: 0;
+        letter-spacing: -0.05rem;
+    }
+
+    .box1 {
+        background: #FFFFFF;
+        border: 1px solid #0095A8;
+        padding-left: 27px;
+        padding-right: 27px;
+    }
+
+
+    .arrow {
+        background: url("https://yongin.s3.ap-northeast-2.amazonaws.com/01_4_arrow.png");
+        background-repeat: no-repeat;
+        width: 82px;
+        height: 98px;
+        color: #fff;
+        padding-top: 2.2rem;
+        margin-left: 1rem;
+    }
+
+    .one {
+        border-radius: 60px;
+        line-height: 70px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .box_03 {
+        background: #FFFFFF!important;
+        border: 1px solid #E5E5E5!important;
+        padding: 53px;
+        max-width: 935px;
+        margin: 0;
+    }
+
+    .graybox {
+        background: #E5E5E5;
+        height: 24px;
+    }
+
+    .tab_03_btn {
+        width: 160px;
+        margin: 0 auto;
+    }
+
+    /* 모바일 css */
+    @media only screen and (max-width: 576px) {
+          .dis_flex { display: flex;}
+          .he_fit { height: fit-content;}
+         .box_03 { padding:50px 15px;}
+         .graybox {
+         flex: unset;
+         max-width: fit-content;
+         margin-bottom: 15px;
+         }
+          .mo_width{
+         flex: 100%;
+         max-width: 100%;
+         }
+    }
+
+    @media only screen and (max-width: 667px) and (max-height: 375px) {
+          .dis_flex { display: flex;}
+          .he_fit { height: fit-content;}
+         .box_03 { padding:50px 15px;}
+         .graybox {
+         flex: unset;
+         max-width: fit-content;
+         margin-bottom: 15px;
+         }
+          .mo_width{
+         flex: 100%;
+         max-width: 100%;
+         }
+    }
+
+</style>
+
+
+
+<div class="container-fluid bg_point" style="height:180px">
+    <div class="row align-items-end h-100">
+        <div class="col fs_36 fw_700 color_white text-center pb-3">
+            윤리경영
+        </div>
+    </div>
+</div>
+
+
+
+<!---사이드메뉴-->
+<div class="mw_1500 d-flex mb-8 mt-5">
+    <ul class="nav flex-column mt-6 sidebar ">
+        <li class="nav-item  text-center border_b">
+            <a class="nav-link fs_20 py-5 disabled" href="#">회사소개</a>
+        </li>
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3 " href="/page/?M2_IDX=25967">CEO인사말</a>
+        </li>
+        <li class="nav-item  fs_13 border_b">
+            <a class="nav-link py-3 " href="/page/?M2_IDX=25976">경영철학</a>
+        </li>
+        <li class="nav-item  fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=25977">CI소개</a>
+        </li>
+        <li class="nav-item  fs_13 border_b">
+            <a class="nav-link py-3 active" href="/page/?M2_IDX=25978">윤리경영</a>
+        </li>
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=25979">연혁</a>
+        </li>
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=25980">조직도</a>
+        </li>
+
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=25981">소비자중심경영(CCM)</a>
+        </li>
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=25982">사회공헌활동</a>
+        </li>
+        <li class="nav-item  fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=25983">가족회사소개</a>
+        </li>
+        <li class="nav-item  fs_13 ">
+            <a class="nav-link py-3" href="/page/?M2_IDX=25987">오시는 길</a>
+        </li>
+    </ul>
+
+    <div class="container-fluid mt-9 mw_1100">
+        <div class="row ">
+            <div class="col">
+                <div class="fs_32 fw_600 point_color">윤리경영</div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col">
+                <ul class="nav nav-tabs text-center">
+                    <li class="nav-item"style="width:33.33%;">
+                        <a class="nav-link active h_43 pt_10" data-toggle="tab" href="#qwe">윤리경영</a>
+                    </li>
+                    <li class="nav-item " style="width:33.33%;">
+                        <a class="nav-link h_43 pt_10" data-toggle="tab" href="#asd">윤리헌장</a>
+                    </li>
+                    <li class="nav-item" style="width:33.33%;">
+                        <a class="nav-link h_43 pt_10" data-toggle="tab" href="#zxc">비윤리신고</a>
+                    </li>
+                </ul>
+                <div class="tab-content pt_40 mw_1000">
+                    <div class="tab-pane fade show active" id="qwe">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="fs_24">
+                                        윤리경영(倫理經營, ethical management)의 의미
+                                    </div>
+                                    <div class="fs_15 pt-3">용인공원라이프는 회사경영 및 기업활동에 있어 ‘기업윤리’를 최우선 가치로 생각하며, 투명하고 공정하며 합리적인 업무수행을 추구하는 경영정신을 바탕으로 시장의 윤리 즉 시장의 질서를 준수하는 동시에 사회적으로 권리와 의무를 다하고자 합니다.
+                                    </div>
+
+                                    <img src="https://yongin.s3.ap-northeast-2.amazonaws.com/yunri.jpg" alt="" class="img-fluid mt-4 mb-5_1">
+                                    <div class="fs_15 text-center point_color ">
+                                     용인공원라이프는 모든 임직원이 실제업무에서 실행할 수 있도록 윤리헌장을 제정하고 윤리헌장준수를 통해 윤리경영이 당사에 뿌리내릴 수 있도록 노력하고 있습니다.
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<div class="row mw_820 mt-5 ">
+                                <div class="col text-center polygon1">
+                                    <div class="poly_item fw_500 fs_20">
+                                        산림조합 등<br>
+                                        유관단체
+                                    </div>
+                                </div>
+
+                                <div class="col text-center polygon2 mt-5_1 color_white">
+                                    <div class="poly_item fw_500 fs_20">
+                                        협력업체
+                                    </div>
+                                </div>
+
+                                <div class="col text-center polygon3 color_white">
+                                    <div class="poly_item fw_500 fs_20">
+                                        고객
+                                    </div>
+                                </div>
+
+                                <div class="col text-center polygon4 mt-5_1 color_white">
+                                    <div class="poly_item fw_500 fs_20">
+                                        임직원
+                                    </div>
+                                </div>
+
+
+                                <div class="col text-center polygon5">
+                                    <div class="poly_item fw_500 fs_20">
+                                        지역사회
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row mw_820 text-center" style="margin-top: -4rem">
+                                <div class="col poly">
+                                    <div class="poly_item2">
+                                        <img src="https://yongin.s3.ap-northeast-2.amazonaws.com/line_1.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col poly">
+                                    <div class="poly_item2">
+                                        <img src="https://yongin.s3.ap-northeast-2.amazonaws.com/line_2.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col poly">
+                                    <div class="poly_item2">
+                                        <img src="https://yongin.s3.ap-northeast-2.amazonaws.com/line_1.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col poly">
+                                    <div class="poly_item2">
+                                        <img src="https://yongin.s3.ap-northeast-2.amazonaws.com/line_2.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col poly">
+                                    <div class="poly_item2">
+                                        <img src="https://yongin.s3.ap-northeast-2.amazonaws.com/line_1.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row mw_820 text-center mt-4">
+                                <div class="col fs_15">
+                                    투명한 관계유지
+                                </div>
+                                <div class="col fs_15">
+                                    건전한<br>
+                                    협력관계 형성
+                                </div>
+                                <div class="col fs_15 pol_le">
+                                    기업가치 제고<br>
+                                    서비스 향상 및 품질개선
+                                    추명한 경영정보 제공
+                                    권익증진
+                                </div>
+                                <div class="col fs_15">
+                                    상호간 존중문화 형성
+                                    근로환경 개선
+                                </div>
+                                <div class="col fs_15">
+                                    환경친화적 경영활동
+                                    활발한 사회공헌 활동
+                                </div>
+                            </div>
+
+                            <div class="row mt-6 mb-5">
+                                <div class="col">
+                                    <div class="fs_24">
+                                        추구가치
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mw_820 mt-3 text-center">
+                                <div class="col">
+                                </div>
+                                <div class="col" style="margin-left: -2.3rem">
+                                    <div class="fs_15 fw_300 py-1 bg_point color_white px-0">
+                                        FOREST 경영
+                                    </div>
+                                </div>
+                                <div class="col">
+                                </div>
+                                <div class="col">
+                                </div>
+                                <div class="col">
+
+                                </div>
+                            </div>
+
+                            <div class="row mw_820 mt-3 text-center">
+                                <div class="col">
+                                    <div class="fs_15 box1 py-1">
+                                        Faith<br>
+                                        신뢰경영
+                                    </div>
+                                    <div class="fs_15 box1 py-1 mt-3">
+                                        Ethics<br>
+                                        윤리경영
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="fs_15 box1 py-1 ">
+                                        Ownership<br>
+                                        주인의식
+                                    </div>
+                                    <div class="fs_15 box1 py-1 mt-3">
+                                        Service<br>
+                                        고객중심경영
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="fs_15 box1 py-1">
+                                        Responsibility<br>
+                                        책임경영
+                                    </div>
+                                    <div class="fs_15 box1 py-1 mt-3">
+                                        Transparency<br>
+                                        투명경영
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="fs_15 arrow">
+                                        목표
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="fs_15 bg_point color_white py-2 fw_700 px-5 mt-4" >
+                                        윤리경영실천<br>
+                                        우수기업
+                                    </div>
+                                </div>
+                            </div>-->
+
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade show " id="asd">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="fs_24">
+                                        윤리헌장
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mw_850 mt-4">
+                                <div class="col-1 text-center">
+                                    <div class="one bg_point color_white fw_800 fs_20">
+                                        하나
+                                    </div>
+                                </div>
+                                <div class="col-11 pl-5 mt-3">
+                                    <div class="fs_15">
+                                        용인공원라이프는 고객을 존중하며, 고객이 만족할 수 있는 최상의 가치 창조에 앞장서며 이것을 모든 임직원의 행동에 있어 최우선 기준으로 삼고 실천한다.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mw_850 mt-5">
+                                <div class="col-1 text-center">
+                                    <div class="one bg_point color_white fw_800 fs_20">
+                                        둘
+                                    </div>
+                                </div>
+                                <div class="col-11 pl-5 mt-3">
+                                    <div class="fs_15">
+                                        용인공원라이프는 임직원을 가치창출의 핵심으로 생각하며 보람과 긍지 높은 일터를 제공함으로써 차별대우 없이 공정한 평가를 적용하여 우수한 인재육성에 앞장선다.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mw_850 mt-5">
+                                <div class="col-1 text-center">
+                                    <div class="one bg_point color_white fw_800 fs_20">
+                                        셋
+                                    </div>
+                                </div>
+                                <div class="col-11 pl-5 mt-3">
+                                    <div class="fs_15">
+                                        용인공원라이프는 제반 법과 규정을 철저히 준수하고 시장의 질서를 준수하는 동시에 모든 협력사 및 이해관계자와 상호간 신의성실을 원칙으로 대등한 지위에서 상생의 번영을 추구한다.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mw_850 mt-5">
+                                <div class="col-1 text-center">
+                                    <div class="one bg_point color_white fw_800 fs_20">
+                                        넷
+                                    </div>
+                                </div>
+                                <div class="col-11 pl-5 mt-3">
+                                    <div class="fs_15">
+                                       용인공원라이프는 국가와 사회의 일원으로서 기업의 사회적 책임과 역할을 인식하고, 지속적인 성장을 통한 기업을 가치를 증대시키며, 국가와 사회의 가치발전에 기여하고자 한다.
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<div class="row mw_850 mt-5">
+                                <div class="col-1 text-center">
+                                    <div class="one bg_point color_white fw_800 fs_20">
+                                        05
+                                    </div>
+                                </div>
+                                <div class="col-11 pl-5 mt-3">
+                                    <div class="fs_15">
+                                        우리는 법과 규정을 준수하고 자유경쟁의 시장 질서를 존중하며, 모든 이해관계자와 상호 협력하는 공동체적 관계를 구축하여 상생의 번영을 추구한다.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mw_850 mt-5">
+                                <div class="col-1 text-center">
+                                    <div class="one bg_point color_white fw_800 fs_20">
+                                        06
+                                    </div>
+                                </div>
+                                <div class="col-11 pl-5 mt-3">
+                                    <div class="fs_15">
+                                        우리는 사회의 구성원으로서 기업의 사회적 책임을 깊이 인식하고, 사회공헌활동에 적극적으로 참여함으로써, 착한 기업 시민의 역할을 충실히 수행하여 국가와 사회의 발전에 이바지한다.
+                                    </div>
+                                </div>
+                            </div>-->
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade show " id="zxc">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="fs_24">
+                                        용인공원라이프 비윤리신고
+                                    </div>
+                                </div>
+                                <div class="col mt-4 dis_flex">
+                                    <img src="https://yongin.s3.ap-northeast-2.amazonaws.com/01_4_3_icon.png" alt="" class="img-fluid mr-2  he_fit">                                                                 용인공원라이프는 임직원의 직무관련 금품 및 향응 수수행위, 특혜 제공, 기타 부당행위에 대하여 임직원의 부패행위 신고를 받고 있습니다.
+                                </div>
+                            </div>
+
+                            <div class="row box_03 mt-4">
+                                <div class="col-2 graybox text-center">
+                                    제보대상
+                                </div>
+                                <div class="col-10 fs_15  pl-4 mo_width">
+                                    공금 유용 및 횡령 행위 / 알선청탁 및 압력행사<br>
+                                    직무관련 금품, 향응 수수 행위 / 기타 비윤리적 행위
+                                </div>
+                                <div class=" col-12 border_b my-5">
+                                </div>
+
+
+                                <div class="col-2 graybox text-center">
+                                    시행목적
+                                </div>
+                                <div class="col-10 fs_15  pl-4 mo_width">
+                                    - 윤리경영과 반부패를 위한 시스템적 기반 마련<br>
+                                    - '내부신고' 활성화를 유도하여 건전한 신고문화 정착<br>
+                                    - 문제점 조기발견과 개선을 통한 부패예방과 부패비용 절감효과
+                                </div>
+                                <div class=" col-12 border_b my-5">
+                                </div>
+
+
+                                <div class="col-2 graybox text-center">
+                                    신고대상
+                                </div>
+                                <div class="col-10 fs_15  pl-4 mo_width">
+                                    - 공금 유용 및 횡령 행위<br>
+                                    - 부당한 이권개입 및 특혜제공<br>
+                                    - 알선청탁 및 압력행사<br>
+                                    - 부당한 예산집행 및 낭비행위<br>
+                                    - 직무관련 금품, 향응 수수행위<br>
+                                    - 불합리한 제도 및 관행<br>
+                                    - 기타 비윤리적 행위
+                                </div>
+                                <div class=" col-12 border_b my-5">
+                                </div>
+
+
+                                <div class="col-2 graybox text-center">
+                                    신고방법
+                                </div>
+                                <div class="col-10 fs_15  pl-4 mo_width">
+                                    비윤리신고는 반드시 본인인증을 하셔야 합니다.
+                                    불편하시더라도 아래 <span class="point_color">‘본인인증 후 신고’</span> 버튼을 클릭하여 간단한 <span class="point_color">본인인증 절차</span>를 수행하시기 바랍니다.<br><br>
+
+                                    사용자 실명확인 세션정보는 1시간 동안 유지되며, 공용 PC일 경우 보안을 위해 자리를 비우실 때는
+                                    반드시 창을 닫으시기 바랍니다.<br><br>
+
+                                    입력하신 개인정보를 보호하기 위해 안전하게 암호화하여 전송합니다.<br><br>
+
+                                    '신고 유형'을 선택하여 관련 정보를 기입 후 임직원의 부패행위에 대해 신고해주시기 바랍니다.
+                                </div>
+
+                                <div class="col">
+                                    <div class="text-center bg_point color_white fs_15 tab_03_btn mt-5 py-1">
+                                        <a href="/board/add.php?M2_IDX=25996&PAGE=1">
+                                            본인인증 후 신고 <img src="https://yongin.s3.ap-northeast-2.amazonaws.com/01_4_3_arrow.png" alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    $(document).ready(function () {
+        //이미지 변경 함수 호출
+        changeIMG();
+    });
+    function changeIMG() {
+        //img 태그의 아이디로 변경 할 때
+        $(".logo").attr("src", "https://yongin.s3.ap-northeast-2.amazonaws.com/logo_ci_blue.png");
+    }
+
+
+</script>
+
+
+

@@ -1,0 +1,210 @@
+.nav_c {
+    position: relative;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #434343 !important;
+}
+
+.bd_leftSmall {
+    color: #434343;
+}
+
+.sidebar {
+    height: 341px;
+}
+
+
+.nx-prefix.sub-content {
+padding-bottom:100px;
+background:#fff
+}
+.nx-prefix.sub-content.bgcolor1 {
+background:#f3f3f3
+}
+.nx-prefix.sub-content .inner-static {
+position:relative;
+max-width:1200px;
+margin:0 10px
+}
+.nx-prefix.sub-content .inner-static::after {
+content:'';
+display:table;
+clear:both
+}
+.nx-prefix.sub-content .mboard-add-area .mboard-ts-add {
+width:100%;
+margin:0;
+padding:0;
+background:#fff;
+border-top:2px solid #dedede
+}
+.nx-prefix.sub-content .mboard-add-area .mboard-ts-add tbody tr th,.nx-prefix.sub-content .mboard-add-area .mboard-ts-add tbody tr td {
+border-bottom:1px solid #dedede;
+-webkit-box-sizing:border-box;
+box-sizing:border-box
+}
+.nx-prefix.sub-content .mboard-add-area .mboard-ts-add tbody tr th {
+padding:15px 10px 15px 15px;
+width:200px;
+background:#f3f3f3;
+vertical-align:top
+}
+.nx-prefix.sub-content .mboard-add-area .mboard-ts-add tbody tr th .item {
+display:block;
+padding:10px 0;
+-webkit-box-sizing:border-box;
+box-sizing:border-box;
+font-weight:500;
+font-size:16px;
+line-height:25px;
+display:-webkit-box;
+display:-ms-flexbox;
+display:flex;
+-webkit-box-align:center;
+-ms-flex-align:center;
+align-items:center;
+letter-spacing:-0.03em;
+color:#333
+}
+.nx-prefix.sub-content .mboard-add-area .mboard-ts-add tbody tr td {
+padding:15px 10px;
+width:calc(100% - 200px)
+}
+.nx-prefix.sub-content .mboard-add-area .mboard-ts-add tbody tr td .skin-ips1 {
+padding:5px 20px;
+max-width:100%;
+width:100%;
+height:45px;
+background:#f6f9fb;
+border:1px solid #dedede;
+-webkit-box-sizing:border-box;
+box-sizing:border-box;
+border-radius:2px;
+vertical-align:top;
+font-weight:500;
+font-size:14px;
+line-height:21px;
+letter-spacing:-0.03em;
+color:#666
+}
+.nx-prefix.sub-content .mboard-add-area .mboard-ts-add tbody tr td .skin-ips1.ips-ws1- {
+max-width:260px
+}
+.nx-prefix.sub-content .mboard-add-area .mboard-ts-add tbody tr td .skin-ips1.ips-ws2- {
+max-width:600px
+}
+.nx-prefix.sub-content .mboard-add-area .mboard-ts-add tbody tr td .skin-txta1 {
+padding:14px 20px;
+max-width:100%;
+width:100%;
+height:300px;
+background:#f6f9fb;
+border:1px solid #dedede;
+-webkit-box-sizing:border-box;
+box-sizing:border-box;
+border-radius:2px;
+vertical-align:top;
+font-weight:500;
+font-size:14px;
+line-height:21px;
+letter-spacing:-0.03em;
+color:#666;
+resize:none
+}
+.nx-prefix.sub-content .mboard-add-area .mboard-ts-add tbody tr td .skin-txta1.txta-hs1- {
+height:150px
+}
+.nx-prefix.sub-content .mboard-add-area+.btn-area {
+display:-webkit-box;
+display:-ms-flexbox;
+display:flex;
+-ms-flex-wrap:wrap;
+flex-wrap:wrap;
+-webkit-box-align:center;
+-ms-flex-align:center;
+align-items:center;
+-webkit-box-pack:center;
+-ms-flex-pack:center;
+justify-content:center;
+margin-top:80px;
+text-align:center
+}
+.nx-prefix.sub-content .mboard-add-area+.btn-area .btn-save,.nx-prefix.sub-content .mboard-add-area+.btn-area .btn-cancel {
+display:-webkit-inline-box;
+display:-ms-inline-flexbox;
+display:inline-flex;
+-webkit-box-align:center;
+-ms-flex-align:center;
+align-items:center;
+-webkit-box-pack:center;
+-ms-flex-pack:center;
+justify-content:center;
+margin:0 5px;
+outline:0;
+border:0;
+cursor:pointer;
+background:transparent;
+-webkit-box-sizing:border-box;
+box-sizing:border-box;
+vertical-align:top;
+-webkit-transition:all 0.25s linear;
+transition:all 0.25s linear;
+width:200px;
+height:56px;
+font-weight:700;
+font-size:16px;
+color:#fff;
+border-radius:4px;
+-webkit-transition:background 0.15s linear;
+transition:background 0.15s linear
+}
+.nx-prefix.sub-content .mboard-add-area+.btn-area .btn-save {
+background:#0095A8
+}
+.nx-prefix.sub-content .mboard-add-area+.btn-area .btn-save:hover {
+background:#5573dc
+}
+.nx-prefix.sub-content .mboard-add-area+.btn-area .btn-cancel {
+background:#4d5163
+}
+.nx-prefix.sub-content .mboard-add-area+.btn-area .btn-cancel:hover {
+background:#424658
+}
+@media print,screen and (min-width:1200px) {
+.nx-prefix.sub-content .inner-static {
+    margin:0 auto
+}
+}
+@media print,screen and (max-width:768px) {
+.nx-prefix.sub-content {
+    padding:0 0 50px
+}
+.nx-prefix.sub-content .inner-static {
+    margin:0 15px
+}
+.nx-prefix.sub-content .mboard-add-area .mboard-ts-add tbody tr th {
+    padding:10px;
+    width:100px
+}
+.nx-prefix.sub-content .mboard-add-area .mboard-ts-add tbody tr td {
+    padding:10px;
+    width:calc(100% - 100px)
+}
+.nx-prefix.sub-content .mboard-add-area .mboard-ts-add tbody tr td .skin-ips1 {
+    padding:5px 10px
+}
+.nx-prefix.sub-content .mboard-add-area .mboard-ts-add tbody tr td .skin-txta1 {
+    padding:10px;
+    height:200px
+}
+.nx-prefix.sub-content .mboard-add-area .mboard-ts-add tbody tr td .skin-txta1.txta-hs1- {
+    height:100px
+}
+.nx-prefix.sub-content .mboard-add-area+.btn-area {
+    margin:60px -5px 0
+}
+.nx-prefix.sub-content .mboard-add-area+.btn-area .btn-save,.nx-prefix.sub-content .mboard-add-area+.btn-area .btn-cancel {
+    width: calc((100% - 30px) / 3)
+}
+}

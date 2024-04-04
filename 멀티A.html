@@ -1,0 +1,531 @@
+<style>
+	.hamburger-button.active span {
+		background-color: #fff;
+	}
+
+	.hamburger-button span {
+		background-color: #fff;
+	}
+
+	footer {
+		height: 160px;
+	}
+
+	.dropdown:hover .dropdown-menu {
+		display: block;
+		margin-top: 0;
+	}
+
+	.dropdown-toggle::after {
+		display: none;
+	}
+
+	.dropdown-menu {
+		margin-left: 12px !important;
+	}
+
+	.pr_50 {
+		padding-right: 50px !important;
+	}
+
+	.pl_50 {
+		padding-left: 50px !important;
+	}
+
+	.positionSet {
+		margin-top: 15%;
+		margin-left: 35%;
+		text-align: center;
+	}
+
+	a {
+		color: #7E7E7E;
+	}
+
+	.bar {
+		font-size: 13px;
+		color: #7E7E7E;
+	}
+
+	.offHover {
+		border-top: 1px solid #0095A8 !important;
+		border-bottom: 1px solid #0095A8 !important;
+		background: #fff !important;
+	}
+
+	.onHover {
+		/* border-top: 2px solid #fff !important;
+        border-bottom: 2px solid #fff !important; */
+		background: #e6f5f7 !important;
+		/* background: #0095A8 !important; */
+		/* color: #fff; */
+	}
+
+	.pt-13 {
+		padding-top: 13rem;
+	}
+
+	.pt-29 {
+		padding-top: 21rem;
+	}
+
+
+	.mainBox_p0 a {
+		color: #434343;
+	}
+
+	.modalTitle {
+		width: 140px;
+		height: 50px;
+		text-align: center;
+		background: #eee;
+		padding-top: 14px;
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+	.modalCon {
+		width: 418px;
+		height: 50px;
+		padding: 8px 10px;
+	}
+
+	.mainbg {
+		background: url(https://yongin.s3.ap-northeast-2.amazonaws.com/main_bg.png);
+		background-size: cover;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-position-y: bottom;
+		top: 0;
+	}
+
+	.mainTitle_box {
+		border-top: 1px solid #0095A8;
+		border-bottom: 1px solid #0095A8;
+		background: #fff;
+		height: 200px;
+		line-height: 1;
+	}
+
+	.mainTitle_tet {
+		font-size: 18px;
+		font-weight: 400;
+	}
+
+	.navbarSub_BC {
+		background: #0095A8;
+	}
+
+	.mainBox {
+		width: 918px;
+		height: 200px;
+		margin: 0 auto;
+		position: absolute;
+		bottom: 0;
+		/* top: 50%; */
+		left: 50%;
+		transform: translate(-50%, 0%);
+		margin-bottom: 16.8rem;
+		/* padding-top: 17.3rem; */
+	}
+
+	.mainBox_p0 {
+		padding: 0;
+		margin: 0;
+		cursor: pointer;
+	}
+
+	.mainBox_txt {
+		padding: 26px 31px;
+	}
+
+	dt,
+	dd {
+		padding: 20px;
+		border-bottom: 1px solid #eee;
+	}
+
+	dt {
+		margin-bottom: 5px;
+	}
+
+	dt span {
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 10px;
+	}
+
+	dt.on {
+		background-color: #0095A8;
+		color: #fff;
+	}
+
+	dd {
+		display: none;
+		line-height: 44px;
+	}
+
+	.lastCol {
+		margin-right: 110px;
+		width: 175px;
+		line-height: 37px;
+	}
+
+	.Rmenubar_con {
+		width: 100px;
+		height: 500px;
+		background: #fff;
+		color: #000;
+		position: fixed;
+		right: 50px;
+		top: 30%;
+	}
+
+	.mb-24 {
+		margin-bottom: 24rem;
+	}
+
+	.pd-56 {
+		padding-bottom: 56rem;
+	}
+
+	.main_logo{
+		width : 350px;
+	}
+
+	/* 테블릿 css */
+	@media only screen and (max-width: 1024px) {
+		.Rmenubar_con {
+			display: none !important;
+			/* width: 50px; */
+		}
+
+		.pt-29 {
+			padding-top: 43rem;
+		}
+
+		.pt-13 {
+			padding-top: 23rem
+		}
+	}
+
+	@media only screen and (max-width: 1366px) and (max-height: 1024px) {}
+
+	/* 모바일 css */
+	@media only screen and (max-width: 576px) {
+		.mb-24 {
+			margin-bottom: -10rem;
+		}
+
+		.mainBox {
+			position: relative;
+		}
+
+		.bl_modal_body {
+			height: 355px;
+			overflow: hidden;
+			overflow-y: scroll;
+		}
+
+		footer.pt-10 {
+			padding-top: 0 !important;
+		}
+
+		footer {
+			background: #fff;
+		}
+
+		footer .fz_20 {
+			font-size: 14px;
+		}
+
+
+
+
+		.bl_modal {
+			width: 300px;
+		}
+
+		.h_800 {
+			height: 500px;
+		}
+
+		.w_398 {
+			width: 48%;
+		}
+
+		.modalTitle {
+			width: 126px;
+		}
+
+		.w_70 {
+			width: 30%;
+		}
+
+		.w_120 {
+			width: 32%;
+		}
+
+		.w_180 {
+			width: 103px;
+		}
+
+		.w_194 {
+			width: 72px;
+		}
+
+		h_90 {
+			height: 137px !important;
+		}
+
+		textarea {
+			width: 100%;
+		}
+
+
+
+
+		.ft_num {
+			font-size: 16px;
+		}
+
+		.mb_30px {
+			font-size: 13px;
+		}
+
+		.Rmenubar_con {
+			display: none;
+		}
+
+		.mainbg {
+			height: 200vh;
+		}
+
+		.pt-13 {
+			padding-top: 0rem
+		}
+
+		.pt-29 {
+			padding-top: 0rem;
+		}
+
+		.moDb {
+			display: block;
+			margin-top: -10rem;
+		}
+
+		.moMw_0 {
+			min-width: 75%;
+			margin: 0 auto -1px auto;
+		}
+
+		.swiper {
+			height: 75px;
+		}
+
+		.swiper-slide {
+			text-align: left;
+		}
+
+		.mo_right_nav_wrap {
+			display: block !important;
+			position: fixed;
+			right: 3%;
+			bottom: 30%;
+			width: 60px;
+			z-index: 10;
+		}
+
+		.mo_call_btn a:before {
+			content: '\f098';
+			font-family: 'FontAwesome';
+			display: block;
+			overflow: hidden;
+			color: #ffffff;
+			background-color: #0094a9;
+			width: 60px;
+			height: 60px;
+			font-size: 35px;
+			line-height: 60px;
+			text-align: center;
+		}
+
+		.mo_right_nav {
+			background-color: rgba(255, 255, 255, 0.9);
+			font-size: 14px;
+			color: #434343;
+			text-align: center;
+		}
+
+		.mo_right_nav li {
+			border-top: 1px solid #c9c9c9;
+			line-height: 60px;
+			height: 60px;
+		}
+
+		.mo_right_nav li:last-child {
+			border-bottom: 2px solid #0094a9;
+		}
+
+		.mo_right_nav li span {
+			justify-content: center;
+			vertical-align: middle;
+			align-items: center;
+			display: inline-block;
+			line-height: 17px;
+		}
+
+		.mo_right_nav li a span,
+		.mo_right_nav li a:hover span {
+			color: #434343;
+		}
+
+		.main_logo{
+			width : auto;
+		}
+
+
+
+	}
+
+	@media only screen and (max-width: 667px) and (max-height: 375px) {
+		.Rmenubar_con {
+			display: none;
+		}
+
+		.mainbg {
+			height: 300vh;
+		}
+
+		.pt-13 {
+			padding-top: 5rem
+		}
+
+		.pt-29 {
+			padding-top: 0rem;
+		}
+
+		.moDb {
+			display: block;
+			margin-top: -5rem;
+		}
+
+		.moMw_0 {
+			min-width: 50%;
+			margin: auto;
+		}
+	}
+</style>
+
+<!-- mainTitle -->
+<div class="container-fluid mainbg ">
+	<div class="row align-items-center h-100 mw_1100 m_auto pb-7">
+
+		<div class="col-12 text-center fw_400 fs_24 pc" style="color:white">
+			<img src="https://yongin.s3.ap-northeast-2.amazonaws.com/logo_ci.png" alt="logo" class="main_logo img-fluid mb-3"><br>
+			고객에게 사랑과 감동을 나누는 또 하나의 가족 공동체 
+		</div>
+
+		<div class="row mainBox pc">
+			<div class="col-4 text-left mainBox_p0 moMw_0">
+				<div id="openModal" class="join_hover py-3 openModal mainTitle_box mainBox_txt">
+					<div style="font-size: 25px; font-weight: 500; margin-bottom: 14px;">다이렉트 가입</div>
+					<div class="mainTitle_tet">가입 시 <br>특별 할인 혜택 제공</div>
+					<div class="text-right">
+						<img src="https://yongin.s3.ap-northeast-2.amazonaws.com/join (1).png" alt="가입"
+							class="img-fluid" width="64px">
+					</div>
+				</div>
+			</div>
+			<div class="col-4 text-left mainBox_p0 moMw_0">
+				<div class="call_hover py-3  mainTitle_box mainBox_txt">
+					<a href="tel:1577-4936" style="color: #343434;">
+						<div style="font-size: 25px; font-weight: 500; margin-bottom: 14px;">1577-4936</div>
+						<div class="mainTitle_tet">24시간 <br>장례 행사 접수</div>
+						<div class="text-right">
+							<img src="https://yongin.s3.ap-northeast-2.amazonaws.com/call center.png" alt="가입"
+								class="img-fluid " width="64px">
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-4 text-left mainBox_p0 moMw_0">
+				<a href="/page/?M2_IDX=25984">
+					<div class="funeral_hover py-3 mainTitle_box mainBox_txt">
+						<div style="font-size: 25px; font-weight: 400; margin-bottom: 14px;">장례상품 소개</div>
+						<div class="mainTitle_tet">용인공원라이프 <br>상조서비스</div>
+						<div class="text-right">
+							<img src="https://yongin.s3.ap-northeast-2.amazonaws.com/funeral.png" alt="가입" class="img-fluid " width="64px">
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<!--모바일 우측 네비게이션-->
+		<div class="mo_right_nav_wrap mobile">
+			<div class="mo_call_btn"><a href="tel:1577-3750"><i class="fa-solid fa-square-phone"></i></a></div>
+			<div class="mo_right_nav">
+				<ul>
+					<li>
+						<a href="tel:1577-4936"><span>24시간 장례접수</span></a>
+					</li>
+					<li>
+						<div class="openModal"><span>가입상담</span></div>
+					</li>
+					<li onclick="location.href='/page/?M2_IDX=25973'"><span>가입내역 조회</span></li>
+					<li><a href="/board/list.php?M2_IDX=25996"><span>고객의 소리</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!--<div class="pt-10 pc" style="background: #FAFAFA;"></div>-->
+
+<div class="swiper">
+	<div class="swiper-wrapper"></div>
+	<div class="swiper-pagination"></div>
+</div>
+
+
+<script>
+	$(function () {
+		//부고란 정보
+		$.ajax({
+			url: serverUrl + 'api/obituary',
+			type: "GET",
+			dataType: "JSONP",
+			jsonp: "callback",
+			async: false,
+		}).done(function (data) {
+			console.log(data);
+			drawObituary(data);
+		}).fail(function (jqXHR, textStatus, errorThrown) {
+			console.log('Obituary Notice Fail! :' + textStatus + " : " + errorThrown);
+		});
+
+
+	})
+
+	function drawObituary(datas) {
+		//        datas = dummyObituary;
+		const $wrapper = $('.swiper-wrapper');
+		for (data of datas) {
+			let $img = $('<img>').attr({ src: "https://yongin.s3.ap-northeast-2.amazonaws.com/tit.png" }).addClass("img-fluid mr-3")
+			let $slide = $('<div>').addClass('swiper-slide');
+			let text = "故 " + data.DEAD_NM + "님의 부고 | 별세일 : " + data.CASKET_DT + " | 발인일 : " + data.COFFIN_CARRY_DT + " | 장례식장 : " + data.HALL_NM + " | 상주 : " + data.MOURNER_NM;
+			$slide.append($img).append(text);
+			$wrapper.append($slide);
+		}
+
+		const swiper = new Swiper('.swiper', {
+			direction: 'vertical',
+			loop: true,
+			speed: 500,
+			autoplay: true,
+		});
+	}	
+</script>

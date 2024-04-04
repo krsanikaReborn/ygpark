@@ -1,0 +1,337 @@
+<style>
+    .nav_c {
+        position: relative;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: #434343 !important;
+    }
+
+    .bd_leftSmall {
+        color: #434343;
+    }
+
+    .sidebar {
+        height: 448px;
+    }
+
+
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+        color: #0095A8;
+        background: #fff;
+        border-color: #0095A8 #0095A8 #fff;
+    }
+
+    .nav-tabs .nav-link {
+        border-color: #fff #fff #0095A8 #fff;
+        background: #EFEFEF;
+        color: #7E7E7E;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        color: #434343;
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    td,
+    th {
+        border: 1px solid #7E7E7E;
+        text-align: center;
+        padding: 8px;
+        font-weight: 300 !important;
+    }
+
+    th {
+        background: #0095A8;
+        color: #fff;
+        border-right: 3px solid #fff;
+        border-left: 3px solid #fff;
+    }
+
+    td {
+        border-right: 3px solid #fff;
+        border-left: 3px solid #fff;
+    }
+
+    #initTable{
+        width : 600px;
+    }
+
+    .disc>li {
+        list-style: disc
+    }
+
+    .pb_25 {
+        padding-bottom: 25px;
+    }
+
+    .sub_txt01 {
+        color: #434343;
+        font-size: 15px;
+        font-weight: 300;
+        padding-bottom: 8px;
+    }
+
+    .sub_txt02 {
+        padding: 3px 60px;
+        background: #E5E5E5;
+        margin-right: 14px;
+    }
+
+    .p_3_66 {
+        padding: 3px 66px 3px 66px;
+    }
+
+    .th_biz{
+        display : none;
+    }
+
+    .gridline{
+        width : 100%;
+        margin-top : 25px;
+        margin-bottom : 25px;
+        border : dashed 1px #0095A8;
+    }
+
+    .marginline{
+        padding-top: 15px;
+        width: 100%
+    }
+
+    .foldbox{
+        width : 100%;
+        height : 30px;
+        text-align: center;
+    }
+    @media screen and (max-width:576px) {
+
+        .sidebar {
+            display : none;
+        }
+        #initTable{
+            width : 100%;
+        }
+
+/*        
+        .foldbox {
+            width : 390px;
+        }
+*/        
+    }
+</style>
+
+<div class="container-fluid bg_point" style="height:180px">
+    <div class="row align-items-end h-100">
+        <div class="col fs_36 fw_700 color_white text-center pb-3">
+            마이페이지
+        </div>
+    </div>
+</div>
+
+
+<!---사이드메뉴-->
+<div class="mw_1500 d-flex mt-5 mb-8">
+    <ul class="nav flex-column mt-6 sidebar">
+        <li class="nav-item  text-center border_b">
+            <a class="nav-link fs_20 py-5 disabled" href="#">마이페이지</a>
+        </li>
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=26187">상조회원등록</a>
+        </li>
+        <li class="nav-item  fs_13 border_b">
+            <a class="nav-link py-3" href="/my/memb.info.php">회원정보수정</a>
+        </li>
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=25973">가입내역조회</a>
+        </li>
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3 active" href="/page/?M2_IDX=25974">납부내역조회</a>
+        </li>
+        <li class="nav-item fs_13 protocoler">
+            <a class="nav-link py-3" href="/page/?M2_IDX=26129">의전팀장조회</a>
+        </li>
+        <li class="nav-item fs_13 border_b protocoler">
+            <a class="nav-link py-3" href="/page/?M2_IDX=26574">법인장례지원</a>
+        </li>        
+    </ul>
+    <div id="dataContents" class="container-fluid table-responsive-sm mt-9 mw_1100">
+        <div class="row ">
+            <div class="col">
+                <div class="fs_32 fw_600 point_color">납부내역조회<br><br></div>
+            </div>
+        </div>
+
+        <div id ="initTable" class="row" style="display: none; ">
+            <div class="marginline"></div>
+            <table>
+                <tr>
+                    <th>회원번호</th>
+                </tr>
+                <tr>
+                    <th>상품명</th>
+                </tr>
+                <tr>
+                    <th>총납부회차</th>
+                </tr>
+                <tr>
+                    <th>1회납부액</th>
+                </tr>
+                <tr>
+                    <th>기납부회차</th>
+                </tr>
+                <tr>
+                    <th>기납부액</th>
+                </tr>
+                <tr>
+                    <th>할인회차</th>
+                </tr>
+                <tr>
+                    <th>잔여회차</th>
+                </tr>
+                <tr>
+                    <th>잔여금액</th>
+                </tr>
+                <tr>
+                    <th>납부시작월</th>
+                </tr>
+                <tr>
+                    <th>납부일</th>
+                </tr>
+                <tr>
+                    <th>카드유효기간</th>
+                </tr>
+                <tr>
+                    <th>은행명/카드사</th>
+                </tr>
+                <tr>
+                    <th>계좌번호/카드번호</th>
+                </tr>
+                <tr>
+                    <th>예금주명/소유자명</th>
+                </tr>
+                <tr>
+                    <th>예금주 생년월일</th>
+                </tr>
+            </table>
+<!--
+
+            <div class="foldbox" onclick="toggleTables(this)">
+                <img style="transform: none;" src="https://yongin.s3.ap-northeast-2.amazonaws.com/arrow_down_blue.png">
+            </div>
+-->
+            <table style="display:none;">
+            </table>
+            <div class="marginline"></div>
+            <table style="display:none;">
+            </table>
+            <div class="marginline"></div>
+        </div>
+        <div class="fs_20">
+            자세한 조회는 <a href="tel:tel:1577-3750">고객상담 1577-3750</a>에 연락주시기 바랍니다.
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $( function(){
+        user.getUserData();
+        $.ajax({
+            url : serverUrl + "api/user/contract/" + user.id,
+            type : "GET",
+            dataType : "JSONP",
+            jsonp : "callback",
+            async : false,
+        }).done(function(data){
+            console.log(data);
+            drawContractData(data.data);
+        }).fail(function (jqXHR, textStatus, errorThrown){
+            console.log('Funeral User Error! :'+textStatus+" : "+errorThrown);
+            alert('회원정보를 가져오는 데 실패하였습니다.');
+            location.href="/";
+        });
+    });
+
+
+    var user = {
+        id: null,
+        getUserData: function () {
+            $.ajax({
+                url: '/api/info.nx',
+                data: {"KEY": apikey, "SESS_ID": document.cookie.match('nx_session=([^;]*)')[1], "param": "id"},
+                type : "POST",
+                async : false,
+            }).done(function (data) {
+                if (data.success === true) {
+                    console.log('UserAuth Success!');
+                    user.id = data.items.id;
+                } else {
+                    console.log('login Nothing!');
+                }
+            }).fail(function (jqXHR, textStatus, errorThrown) {
+                console.log('login Error!' + textStatus + " : " + errorThrown);
+            });
+        }
+    }
+
+
+    function drawContractData(contracts){
+        var $dataContent =  $('#dataContents');
+        var $initTable = $('#initTable');
+
+        $.each(contracts, function(i, contract){
+            var $tables = $initTable.clone().attr('id', 'datas'+i).css({display: 'block'});
+            var $trs = $tables.find('tr');
+            $trs.eq(0).append($('<td>').html(contract.CNTRCT_NO));
+            $trs.eq(1).append($('<td>').html(contract.PRO_NAME));
+            $trs.eq(2).append($('<td>').html(contract.PRO_NUMBER));
+            $trs.eq(3).append($('<td>').html(contract.PRO_MONEY));
+            $trs.eq(4).append($('<td>').html(contract.LAST_TIMES));
+            $trs.eq(5).append($('<td>').html(contract.PAYAMT));
+            $trs.eq(6).append($('<td>').html(contract.DISCOUNT_CNT));
+            $trs.eq(7).append($('<td>').html(contract.REMAIN_TIMES ));
+            $trs.eq(8).append($('<td>').html(contract.REMAIN_PAYAMT ));
+            $trs.eq(9).append($('<td>').html(contract.PAY_SDATE ));
+            $trs.eq(10).append($('<td>').html(contract.WISHPAY_DATE ));
+            $trs.eq(11).append($('<td>').html(contract.EXPIRE_DATES ));
+            $trs.eq(12).append($('<td>').html(contract.BILL_BANK ));
+            $trs.eq(13).append($('<td>').html(contract.BILL_NO ));
+            $trs.eq(14).append($('<td>').html(contract.BILL_NAME ));
+            $trs.eq(15).append($('<td>').html(contract.BILL_IDENTITYID ));
+
+            $dataContent.append($tables);
+//            $dataContent.append($('<div>').addClass('gridline'));
+        });
+        $initTable.remove();
+        $('.foldbox').each(function(index, item){
+//            item.trigger('click');
+        })
+    }
+
+    function toggleTables(selector){
+        var $targetTables = $(selector).parent($('.row'));
+        var $arrow = $targetTables.find('.foldbox > img');
+        if($arrow.css('transform') == 'none') {
+            $arrow.css({transform : "rotate(180deg)" });
+        }else{
+            $arrow.css({transform : "none" });
+        }
+        $($targetTables.find('table')[1]).toggle();
+        $($targetTables.find('table')[2]).toggle();
+    }
+
+    
+    $(document).ready(function () {
+        //이미지 변경 함수 호출
+        changeIMG();
+    });
+    function changeIMG() {
+        //img 태그의 아이디로 변경 할 때
+        $(".logo").attr("src", "https://yongin.s3.ap-northeast-2.amazonaws.com/logo_ci_blue.png");
+    }
+
+</script>

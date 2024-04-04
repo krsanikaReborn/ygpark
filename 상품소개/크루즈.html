@@ -1,0 +1,536 @@
+<style>
+    .nav_c {
+        position: relative;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: #434343 !important;
+    }
+
+    .bd_leftSmall {
+        color: #434343;
+    }
+
+    .sidebar {
+        height: 341px;
+    }
+
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+        color: #0095A8;
+        background: #fff;
+        border-color: #0095A8 #0095A8 #fff;
+    }
+
+    .nav-tabs .nav-link {
+        border-color: #fff #fff #0095A8 #fff;
+        background: #EFEFEF;
+        color: #7E7E7E;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        color: #434343;
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    td,
+    th {
+        border: 1px solid #7E7E7E;
+        text-align: center;
+        padding: 8px;
+        font-weight: 300 !important;
+    }
+
+    th {
+        background: #0095A8;
+        color: #fff;
+        border-right: 3px solid #fff;
+        border-left: 3px solid #fff;
+    }
+
+    td {
+        border-right: 3px solid #fff;
+        border-left: 3px solid #fff;
+    }
+
+    .disc>li {
+        list-style: disc
+    }
+
+    .pb_25 {
+        padding-bottom: 25px;
+    }
+
+    .pb_61 {
+        padding-bottom: 61px;
+    }
+
+    .sub_txt01 {
+        color: #434343;
+        font-size: 15px;
+        font-weight: 300;
+        padding-bottom: 8px;
+    }
+
+    .sub_txt02 {
+        padding: 3px 60px;
+        background: #E5E5E5;
+        margin-right: 14px;
+    }
+
+    .sub_txt03 {
+        color: #434343;
+        font-size: 15px;
+        font-weight: 300;
+
+    }
+
+    .p_3_66 {
+        padding: 3px 66px 3px 66px;
+    }
+
+    .txt_left {
+        text-align: left !important;
+    }
+
+    .mt_6 {
+        margin-top: 6px;
+    }
+
+    .mb_42 {
+        margin-bottom: 42px;
+    }
+
+    .pr_0 {
+        padding-right: 0;
+    }
+
+    .pl_0 {
+        padding-left: 0;
+    }
+
+    /* 테블릿 css */
+    @media only screen and (max-width: 1024px) {
+        .sidebar {
+            display: none;
+        }
+
+        .nav-item {
+            width: 497px;
+        }
+
+        .pr_0 {
+            padding-right: 15px;
+        }
+    }
+
+    @media only screen and (max-width: 1366px) and (max-height: 1024px) {
+        .sidebar {
+            display: none;
+        }
+
+        .nav-item {
+            width: 535px;
+        }
+    }
+
+    /* 모바일 css */
+    @media only screen and (max-width: 576px) {
+        .nav-item {
+            width: 172px;
+        }
+
+        .moDb {
+            display: block;
+        }
+
+        .moPl_53 {
+            padding-left: 14px;
+        }
+
+        .moPb_61 {
+            padding-top: 20px !important;
+            padding-bottom: 20px !important;
+            text-align: center;
+        }
+
+        .moMw100 {
+            max-width: 100%;
+        }
+
+        .pr_0 {
+            padding-right: 15px;
+        }
+        .sub_txt02 { padding: 3px 24px; }
+        .p_3_66 { padding: 3px 30px 3px 30px; }
+
+    }
+
+    @media only screen and (max-width: 667px) and (max-height: 375px) {
+        .nav-item {
+            width: 318px;
+        }
+
+        .moDb {
+            display: block;
+        }
+
+        .moPl_53 {
+            padding-left: 14px;
+        }
+
+        .moPb_61 {
+            padding-top: 20px !important;
+            padding-bottom: 20px !important;
+            text-align: center;
+        }
+
+        .moMw100 {
+            max-width: 100%;
+        }
+
+        .moTxtc {
+            text-align: center;
+        }
+
+        .pr_0 {
+            padding-right: 15px;
+        }
+        .sub_txt02 { padding: 3px 24px; }
+        .p_3_66 { padding: 3px 30px 3px 30px; }
+    }
+</style>
+
+
+<div class="container-fluid bg_point" style="height:180px">
+    <div class="row align-items-end h-100">
+        <div class="col fs_36 fw_700 color_white text-center pb-3">
+            상품소개
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!---사이드메뉴-->
+<div class="mw_1500 d-flex mt-5 mb-8">
+    <ul class="nav flex-column mt-6 sidebar ">
+        <li class="nav-item  text-center border_b">
+            <a class="nav-link fs_20 py-5 disabled" href="/page/?M2_IDX=25984">상품소개</a>
+        </li>
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3 " href="/page/?M2_IDX=25984">상조</a>
+        </li>
+        <li class="nav-item  fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=25985">웨딩</a>
+        </li>
+        <li class="nav-item  fs_13 border_b">
+            <a class="nav-link py-3 active" href="/page/?M2_IDX=25986">크루즈</a>
+        </li>
+        <!-- 
+        <li class="nav-item  fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=25987">기업서비스</a>
+        </li>
+        -->
+    </ul>
+
+    <div class="container-fluid mt-9 mw_1100">
+        <div class="row ">
+            <div class="col moTxtc">
+                <div class="fs_32 fw_600 point_color">크루즈</div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col">
+
+                <div class="row moDb">
+                    <div class="col pr_0 moTxtc">
+                        <div>
+                            <img src="https://yongin.s3.ap-northeast-2.amazonaws.com/02_3_image01.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col pl_53 pr_0 moPl_53">
+                        <div class="pb_61 moPb_61">
+                            아시아 크루즈, 지중해/알래스카 크루즈
+                        </div>
+                        <div class="sub_txt01">
+                            <span class="sub_txt02 p_3_66">일시납</span>
+                            <span style="text-decoration: line-through;">3,990,000원</span><span>  3,790,500원</span>
+                        </div>
+                        <div class="sub_txt01">
+                            <span class="sub_txt02">100회납</span>
+                            <span>월 39,900원 X 100회</span>
+                        </div>
+                        <div class="sub_txt01">
+                            <span class="sub_txt02">133회납</span>
+                            <span>월 30,000원 X 133회</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pt57 moDb">
+                    <div class="col-4 pr_0 moMw100 moTxtc">
+                        <div>
+                            <img src="https://yongin.s3.ap-northeast-2.amazonaws.com/02_3_image02.png" alt="" class="img-fluid">
+                        </div>
+                        <div>
+                            <table class="mt_6 mb_42">
+                                <tr class="bd_l_fff bd_r_fff">
+                                    <th class="txt_left" colspan="2">지중해 크루즈</th>
+                                </tr>
+                                <tr class="sub_txt03">
+                                    <td>여행지</td>
+                                    <td class="txt_left">바르셀로나/마르세유/피렌체미코노스/
+                                        <br>이스탄불/쿠사다시/산토리니/나폴리/
+                                        <br>로마
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>이용항공</td>
+                                    <td class="text-left">-</td>
+                                </tr>
+                                <tr>
+                                    <td>이용크루즈</td>
+                                    <td class="text-left">-</td>
+                                </tr>
+                                <tr>
+                                    <td>여행기간</td>
+                                    <td class="text-left">-</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-4 pr_0 moMw100 moTxtc">
+                        <div>
+                            <img src="https://yongin.s3.ap-northeast-2.amazonaws.com/02_3_image03.png" alt="" class="img-fluid">
+                        </div>
+                        <div>
+                            <table class="mt_6 mb_42">
+                                <tr class="bd_l_fff bd_r_fff">
+                                    <th class="txt_left" colspan="2">하와이 크루즈</th>
+                                </tr>
+                                <tr class="sub_txt03">
+                                    <td>여행지</td>
+                                    <td class="txt_left">샌프란시스코/힐로/오아후/카우아이/
+                                        <br>마우이/엔세냐다<br><br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>이용항공</td>
+                                    <td class="text-left">국적기&외항기</td>
+                                </tr>
+                                <tr>
+                                    <td>이용크루즈</td>
+                                    <td class="text-left">스타/크라운프린센스 크루즈</td>
+                                </tr>
+                                <tr>
+                                    <td>여행기간</td>
+                                    <td class="text-left">17일</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-4 pr_0 moMw100 moTxtc">
+                        <div>
+                            <img src="https://yongin.s3.ap-northeast-2.amazonaws.com/02_3_image04.png" alt="" class="img-fluid">
+                        </div>
+                        <div>
+                            <table class="mt_6 mb_42">
+                                <tr class="bd_l_fff bd_r_fff">
+                                    <th class="txt_left" colspan="2">카리브해 크루즈</th>
+                                </tr>
+                                <tr class="sub_txt03">
+                                    <td>여행지</td>
+                                    <td class="txt_left">포트로더데일/아루바/보네르그레나다/
+                                        <br>도미니카/세인트 토마스/그랜드터크<br><br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>이용항공</td>
+                                    <td class="text-left">국적기&외항기</td>
+                                </tr>
+                                <tr>
+                                    <td>이용크루즈</td>
+                                    <td class="text-left">로얄/리갈프린센스 크루즈</td>
+                                </tr>
+                                <tr>
+                                    <td>여행기간</td>
+                                    <td class="text-left">13일</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row moDb">
+                    <div class="col-4 pr_0 moMw100 moTxtc">
+                        <div>
+                            <img src="https://yongin.s3.ap-northeast-2.amazonaws.com/02_3_image05.png" alt="" class="img-fluid">
+                        </div>
+                        <div>
+                            <table class="mt_6 mb_42">
+                                <tr class="bd_l_fff bd_r_fff">
+                                    <th class="txt_left" colspan="2">아시아 크루즈</th>
+                                </tr>
+                                <tr class="sub_txt03">
+                                    <td>여행지</td>
+                                    <td class="txt_left">홍콩/중국/베트남</td>
+                                </tr>
+                                <tr>
+                                    <td>이용항공</td>
+                                    <td class="text-left">국적기&외항기</td>
+                                </tr>
+                                <tr>
+                                    <td>이용크루즈</td>
+                                    <td class="text-left">로얄캐리비언 보이저호</td>
+                                </tr>
+                                <tr>
+                                    <td>여행기간</td>
+                                    <td class="text-left">6일</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-4 pr_0 moMw100 moTxtc">
+                        <div>
+                            <img src="https://yongin.s3.ap-northeast-2.amazonaws.com/02_3_image06.png" alt="" class="img-fluid">
+                        </div>
+                        <div>
+                            <table class="mt_6 mb_42">
+                                <tr class="bd_l_fff bd_r_fff">
+                                    <th class="txt_left" colspan="2">아시아 크루즈</th>
+                                </tr>
+                                <tr class="sub_txt03">
+                                    <td>여행지</td>
+                                    <td class="txt_left">홍콩/대만</td>
+                                </tr>
+                                <tr>
+                                    <td>이용항공</td>
+                                    <td class="text-left">국적기&외항기</td>
+                                </tr>
+                                <tr>
+                                    <td>이용크루즈</td>
+                                    <td class="text-left">로얄캐리비언 보이저호</td>
+                                </tr>
+                                <tr>
+                                    <td>여행기간</td>
+                                    <td class="text-left">6일</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-4 pr_0 moMw100 moTxtc">
+                        <div>
+                            <img src="https://yongin.s3.ap-northeast-2.amazonaws.com/02_3_image07.png" alt="" class="img-fluid">
+                        </div>
+                        <div>
+                            <table class="mt_6 mb_42">
+                                <tr class="bd_l_fff bd_r_fff">
+                                    <th class="txt_left" colspan="2">카리브해 크루즈</th>
+                                </tr>
+                                <tr class="sub_txt03">
+                                    <td>여행지</td>
+                                    <td class="txt_left">싱가포르/말레이시아/태국(1)</td>
+                                </tr>
+                                <tr>
+                                    <td>이용항공</td>
+                                    <td class="text-left">국적기&외항기</td>
+                                </tr>
+                                <tr>
+                                    <td>이용크루즈</td>
+                                    <td class="text-left">로얄/리갈프린센스 크루즈</td>
+                                </tr>
+                                <tr>
+                                    <td>여행기간</td>
+                                    <td class="text-left">5일</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row moDb">
+                    <div class="col-4 pr_0 moMw100 moTxtc">
+                        <div>
+                            <img src="https://yongin.s3.ap-northeast-2.amazonaws.com/02_3_image08.png" alt="" class="img-fluid">
+                        </div>
+                        <div>
+                            <table class="mt_6 mb_42">
+                                <tr class="bd_l_fff bd_r_fff">
+                                    <th class="txt_left" colspan="2">아시아 크루즈</th>
+                                </tr>
+                                <tr class="sub_txt03">
+                                    <td>여행지</td>
+                                    <td class="txt_left">싱가포르/말레이시아/태국(2)</td>
+                                </tr>
+                                <tr>
+                                    <td>이용항공</td>
+                                    <td class="text-left">국적기&외항기</td>
+                                </tr>
+                                <tr>
+                                    <td>이용크루즈</td>
+                                    <td class="text-left">로얄캐리비언 마리너호</td>
+                                </tr>
+                                <tr>
+                                    <td>여행기간</td>
+                                    <td class="text-left">5일</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-4 pr_0 moMw100">
+
+                    </div>
+                    <div class="col-4 pr_0 moMw100">
+
+                    </div>
+                         <div class="container-fluid mt_20 bgc_EFEFEF mo_fs13 moDb">
+                            <div class="row">
+                                <div class="col-2 m_auto text-center">
+
+                                </div>
+                                <div class="col p_20">
+                                    <ul class="disc">
+                                        <li>일정 추가 시 추가요금이 발생할 수 있습니다.</li>
+                                        <li>크루즈 일정은 선사 또는 현지 사정 등의 사유로 변경될 수 있습니다.</li>
+                                        <li>상품 금액은 가입 후 3년동안 물가 보장되는 상품으로 3년 이후 이용 시에는 가격 인상이 있을 수 있습니다.</li>
+                                        <li>행사 최저 인원 미달 시 행사가 취소될 수 있습니다.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+    $(document).ready(function () {
+        //이미지 변경 함수 호출
+        changeIMG();
+    });
+    function changeIMG() {
+        //img 태그의 아이디로 변경 할 때
+        $(".logo").attr("src", "https://yongin.s3.ap-northeast-2.amazonaws.com/logo_ci_blue.png");
+    }
+
+
+</script>
+

@@ -1,0 +1,135 @@
+<style>
+    .nav_c {
+        position: relative;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        color: #434343 !important;
+    }
+    .bd_leftSmall {
+        color: #434343;
+    }
+    .sidebar {
+        height: 655px;
+    }
+    .map_box {
+        width:187px;
+    }
+
+    .line25 {
+        line-height: 25px;
+    }
+</style>
+
+
+<div class="container-fluid bg_point" style="height:180px">
+    <div class="row align-items-end h-100">
+        <div class="col fs_36 fw_700 color_white text-center pb-3">
+            오시는 길
+        </div>
+    </div>
+</div>
+
+
+
+
+<!---사이드메뉴-->
+<div class="mw_1500 d-flex mb-8 mt-5">
+    <ul class="nav flex-column mt-6 sidebar ">
+        <li class="nav-item  text-center border_b">
+            <a class="nav-link fs_20 py-5 disabled" href="#">회사소개</a>
+        </li>
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=25967">CEO인사말</a>
+        </li>
+        <li class="nav-item  fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=25976">경영철학</a>
+        </li>
+        <li class="nav-item  fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=25977">CI소개</a>
+        </li>
+        <li class="nav-item  fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=25978">윤리경영</a>
+        </li>
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=25979">연혁</a>
+        </li>
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=25980">조직도</a>
+        </li>
+
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=25981">소비자중심경영(CCM)</a>
+        </li>
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=25982">사회공헌활동</a>
+        </li>
+        <li class="nav-item  fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=25983">가족회사소개</a>
+        </li>
+        <li class="nav-item  fs_13 ">
+            <a class="nav-link py-3 active" href="/page/?M2_IDX=25997">오시는 길</a>
+        </li>
+    </ul>
+
+    <div class="container-fluid mt-9 mw_1100">
+        <div class="row ">
+            <div class="col">
+                <div class="fs_32 fw_600 point_color">오시는 길</div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1120.7120520423452!2d126.95817531476794!3d37.39332350739859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5faca8fe1b01%3A0x791f50c6fae4a6c1!2z7JWI7JaR6riI7Jy17IS87YSw!5e0!3m2!1sko!2skr!4v1655027276097!5m2!1sko!2skr" width="1076" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+
+                <div class="fs_24 mt-4 mb-3 px-3">경기도 안양시 동안구 시민대로260 안양금융센터 A.F.C 810호, 811호</div>
+                <div class="mx-3 mb-5" style="border-bottom: 1px solid #0095A8"></div>
+
+            </div>
+        </div>
+
+        <div class="row px-3">
+            <div class="col-2">
+                <div class="bg_point color_white fs_15 text-center py-1  map_box">지하철로 오시는 길</div>
+            </div>
+            <div class="col fs_15 pl-5 line25">
+                · 4호선 평촌역 2번출구 &rsaquo; 도보 8분<br>
+                ·  4호선 범계역 1번출구 &rsaquo; 도보 13분
+            </div>
+
+            <div class="col-2">
+                <div class="bg_point color_white fs_15 text-center py-1 map_box">버스로 오시는 길</div>
+            </div>
+            <div class="col fs_15 pl-5 line25">
+                · 안양시청(10-095, 법원검찰청 평촌역방면)<br>
+                &nbsp;&nbsp;5-1, 6, 8, 83, 301, 333, 1303, 3330<br>
+                · 안양시청(10-090, 동안구청방면)<br>
+                &nbsp;&nbsp;2-1, 6, 8, 83, 301, 333, 1303, 3330<br>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+<script>
+    $(document).ready(function () {
+        //이미지 변경 함수 호출
+        changeIMG();
+    });
+    function changeIMG() {
+        //img 태그의 아이디로 변경 할 때
+        $(".logo").attr("src", "https://yongin.s3.ap-northeast-2.amazonaws.com/logo_ci_blue.png");
+    }
+
+
+</script>
+

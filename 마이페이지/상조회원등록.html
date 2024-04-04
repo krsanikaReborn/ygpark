@@ -1,0 +1,284 @@
+
+<style>
+    .nav_c {
+        position: relative;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: #434343 !important;
+    }
+
+    .bd_leftSmall {
+        color: #434343;
+    }
+    .sidebar {
+        height: 448px;
+    }
+
+
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+        color: #0095A8;
+        background: #fff;
+        border-color: #0095A8 #0095A8 #fff;
+    }
+
+    .nav-tabs .nav-link {
+        border-color: #fff #fff #0095A8 #fff;
+        background: #EFEFEF;
+        color: #7E7E7E;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        color: #434343;
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    td,
+    th {
+        border: 1px solid #7E7E7E;
+        text-align: center;
+        padding: 8px;
+        font-weight: 300 !important;
+    }
+
+    th {
+        background: #0095A8;
+        color: #fff;
+        border-right: 3px solid #fff;
+        border-left: 3px solid #fff;
+    }
+
+    td {
+        border-right: 3px solid #fff;
+        border-left: 3px solid #fff;
+    }
+
+    .disc>li {
+        list-style: disc
+    }
+
+    .pb_25 {
+        padding-bottom: 25px;
+    }
+
+    .sub_txt01 {
+        color: #434343;
+        font-size: 15px;
+        font-weight: 300;
+        padding-bottom: 8px;
+    }
+
+    .sub_txt02 {
+        padding: 3px 60px;
+        background: #E5E5E5;
+        margin-right: 14px;
+    }
+
+    .p_3_66 {
+        padding: 3px 66px 3px 66px;
+    }
+
+    #regist_btn{
+        width: 400px;
+        margin: 15px;
+        padding: 15px;
+        background-color: #0095A8;
+        color: white;
+    }
+
+    .text-center{
+        text-align: center;
+    }
+
+
+    @media screen and (max-width:576px) {
+
+        .sidebar {
+            display : none;
+        }
+    }
+</style>
+
+<div class="container-fluid bg_point" style="height:180px">
+    <div class="row align-items-end h-100">
+        <div class="col fs_36 fw_700 color_white text-center pb-3">
+            마이페이지
+        </div>
+    </div>
+</div>
+
+
+<!---사이드메뉴-->
+<div class="mw_1500 d-flex mt-5 mb-8">
+    <ul class="nav flex-column mt-6 sidebar ">
+        <li class="nav-item  text-center border_b">
+            <a class="nav-link fs_20 py-5 disabled" href="#">마이페이지</a>
+        </li>
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3 active" href="/page/?M2_IDX=26187">상조회원등록</a>
+        </li>
+        <li class="nav-item  fs_13 border_b">
+            <a class="nav-link py-3" href="/my/memb.info.php">회원정보수정</a>
+        </li>
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=25973">가입내역조회</a>
+        </li>
+        <li class="nav-item fs_13 border_b">
+            <a class="nav-link py-3" href="/page/?M2_IDX=25974">납부내역조회</a>
+        </li>
+        <li class="nav-item fs_13 border_b protocoler">
+            <a class="nav-link py-3" href="/page/?M2_IDX=26129">의전팀장조회</a>
+        </li>
+        <li class="nav-item fs_13 border_b protocoler">
+            <a class="nav-link py-3" href="/page/?M2_IDX=26574">법인장례지원</a>
+        </li>
+    </ul>
+
+    <div class="container-fluid mt-9 mw_1100 ">
+        <div class="row ">
+            <div class="fs_32 fw_600 point_color">상조회원등록<br><br></div>
+        </div>
+        <div id="authencated" class="text-center fs_20" style="display:none;">
+            이미 계정이 전환되었습니다. 마이페이지의 각종 조회를 이용하실 수 있습니다. <br>
+        </div>
+        <div id="unauthencated" class="text-center fs_20">
+            기존 가입자가 아니시거나 아직 계정이 전환되어있지 않습니다.<br>
+            전환을 위해선 이름, 전화번호, 주민/법인등록번호가 상조 가입시의 정보와 일치하여야 합니다.<br>
+            <button id="regist_btn"> 웹사이트 계정 -> 상조 가입자 계정 전환 </button>
+        </div>
+        <div class="text-center fs_20">
+            <br><br>
+            용인공원라이프 회원가입정보 확인 및 수정을 원하시면 <br>
+            고객센터 <span style="color: #0095A8">1577-3750</span>으로 문의하시기 바랍니다.
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+    $( function(){
+        $('#regist_btn').click(register.regist);
+        checkLogin();
+        userInfo.getUserInfo();
+        register.check();
+    });
+
+    var userInfo = {
+        id: null,
+        name: null,
+        idnumber: null,
+        phone: null,
+
+        getUserInfo: () => {
+            console.log('checklogin');
+            $.ajax({
+                        url: '/api/info.nx',
+                        data: {"KEY": apikey, "SESS_ID": userInfo.getSessionId(), "param": "name,id,mobile,tel,user_kind,business_type,birth,business_no,yrrtce4t,3zjutfl2"},
+                        type: "POST",
+                        dataType: 'json',
+                        async : false
+                    })
+                    .done(function (data) {
+                        console.log(data);
+                        if (data.success === true) {
+                            console.log('UserInfo Success!');
+                            userInfo.isLogin = true;
+                            userInfo.id = data.items.id;
+                            userInfo.name = data.items.yrrtce4t ? data.items.yrrtce4t : data.items.name;
+                            userInfo.phone = data.items.mobile;
+                            if(data.items['3zjutfl2']){
+                                userInfo.idnumber =  data.items['3zjutfl2'];
+                            }else if(data.items.birth != null){
+                                userInfo.idnumber = data.items.birth.substr(2).replace("-","").replace("-","");
+                            }else {
+                                userInfo.idnumber = null;
+                            }                            
+                            return true;
+                        } else {
+                            console.log('UserInfo Fail!');
+                            return false;
+                        }
+                    })
+                    .fail(function (jqXHR, textStatus, errorThrown) {
+                        console.log('UserInfo Error!' + textStatus + " : " + errorThrown);
+                        return false;
+                    });
+
+
+        },
+        getSessionId: () => {
+            return document.cookie.match('nx_session=([^;]*)')[1];
+        }
+    }
+
+
+var register = {
+    check : function(){
+        $.ajax({
+            url : serverUrl + "api/user/check/" + userInfo.id,
+            type : "GET",
+            dataType : "text",
+            callback : 'callback',
+            async : false,
+            statusCode : {
+                200 : function(data){register.displayAuthencated(data)},
+                204 : function(data){register.handle204(data)},
+                404 : function(jqXHR, textStatus, errorThrown){register.handle404(jqXHR, textStatus, errorThrown)},
+            }
+        }).done(function(data){
+//          register.handle200(data);
+        }).fail(function(){
+
+        });
+    },
+
+    displayAuthencated : function(data){
+        console.log("ID Founded : " + data);
+        $('#unauthencated').css({display : 'none'});
+        $('#authencated').css({display : 'block'});
+    },
+    handle204 : function(){
+        console.log('Holder Not Founded.');
+    },
+    handle404 : function(jqXHR, textStatus, errorThrown){
+        console.log('Error :'+textStatus+" : "+ errorThrown);
+    },
+
+    regist : function(){
+        $.ajax({
+            url : serverUrl + "api/user/regist",
+            type : "POST",
+            data : {
+                id : userInfo.id,
+                phone : userInfo.phone,
+                id_number : userInfo.idnumber,
+                name : userInfo.name,
+            }
+        }).done(function(data){
+            console.log(data);
+            alert('웹사이트 계정이 기존 회원 계정으로 전환되었습니다.');
+            location.href="/";
+        }).fail(function(jqXHR, textStatus, errorThrown){
+            console.log('API Server '+textStatus+" : "+errorThrown);
+            alert('전환에 실패하였습니다. 문의주시기 바랍니다.');
+        });
+    },
+
+
+}
+
+
+$(document).ready(function () {
+        //이미지 변경 함수 호출
+        changeIMG();
+    });
+    function changeIMG() {
+        //img 태그의 아이디로 변경 할 때
+        $(".logo").attr("src", "https://yongin.s3.ap-northeast-2.amazonaws.com/logo_ci_blue.png");
+    }
+</script>
